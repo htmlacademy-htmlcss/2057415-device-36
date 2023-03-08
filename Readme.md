@@ -1,6 +1,6 @@
 # Личный проект «Девайс»
 
-* Студент: [Бузорин Юрий](https://up.htmlacademy.ru/htmlcss/36/user/2057415).
+* Студент: [Юрий Бузорин](https://up.htmlacademy.ru/htmlcss/36/user/2057415).
 * Наставник: [Малик](https://htmlacademy.ru/profile/id17217)
 
 ---
