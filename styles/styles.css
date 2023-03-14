@@ -399,3 +399,18 @@ body {
     line-height: 20px;
     color: #000000;
 }
+
+.select-control {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.product-list {
+    display: flex;
+}
+
+select{
+    border: none;
+}
