@@ -124,6 +124,12 @@ body {
     text-decoration: none;
 }
 
+.categories {
+    margin-bottom: 50px;
+}
+
+
+
 .delivery-button {
     background-color: #000000;
     color: #FFE17F;
@@ -132,11 +138,12 @@ body {
     line-height: 21px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
+    margin-top: 30px;
 }
 
 .security-button,.credit-button {
     color: #000000;
-    font-family: "Raleway";
+    font-family: "Raleway", sans-serif;
     font-size: 18px;
     line-height: 21px;
     letter-spacing: 0.2em;
@@ -146,31 +153,15 @@ body {
 
 
 
-h3 {
-    text-decoration: none;
-    list-style-type: none;
-}
-
- {
-    font-family: "Raleway";
-    font-size: 50px;
-    line-height: 50px;
-    color: #000000;
-    text-decoration: none;
-}
-
-.delivery-text {
-    font-family: "Rubik";
-    font-size: 18px;
-    line-height: 30px;
-    color: #444444;
-    text-decoration: none;
-}
 
 
 
-.delivery-main {
 
+
+.delivery-new {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 70px;
 }
 
 .delivery-new-text-link {
@@ -191,6 +182,50 @@ h3 {
 .icon-information {
     color: #DCDCDC 50 %;
     background-color: rgba(220, 220, 220, 0.5);
+}
+
+.title-info,.contacts-title {
+    font-family: "Raleway", sans-serif;
+    font-size: 50px;
+    line-height: 50px;
+    color: #000000;
+}
+
+.text-info,.reclame-info,.contacts-text,.device-adress,.working-time {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #444444;
+}
+
+.button-info,.button-contacts {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+    }
+
+.working-hours,.e-commerce-device {
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    color: #000000;
+}
+
+.company-list-item {
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    color: #000000;
 }
 
 .mailing-list {
@@ -236,8 +271,12 @@ h3 {
     color: #000000;
 }
 
+
 .categories-tech {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 38px;
     list-style-type: none;
     background-color: #FFE17F;
 }
