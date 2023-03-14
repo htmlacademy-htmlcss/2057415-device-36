@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
@@ -20,13 +21,22 @@
       <section class="header-navigation-user">
           <ul class="navigation-user">
             <li class="navigation-item">
-              <a class="navigation-link" href="">Войти</a>
+              <a class="navigation-link" href="">
+                <img class="navigation-link-pic" src="images/icons-come.svg" widht="14" height="14" alt="">
+                Войти
+              </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="">Сравнить</a>
+              <a class="navigation-link" href="">
+                <img class="navigation-link-pic-compare" src="images/icons-compare.svg" widht="14" height="14" alt="">
+                Сравнить
+              </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="">Корзина</a>
+              <a class="navigation-link" href="">
+                <img class="navigation-link-pic-basket" src="images/icons-basket.svg" widht="14" height="14" alt="">
+                Корзина
+              </a>
             </li>
           </section>
           <section class="header-catalog-navigation">
@@ -48,7 +58,7 @@
               <a class="navigation-link" href="" >Контакты</a>
             </li>
           </ul>
-    </section>
+      </section>
   </header>
 
     <main class="main-index">
@@ -72,9 +82,9 @@
                     Порхает как бабочка,<br>
                      жалит как пчела!
                   </strong>
-                  <br>Этот обычный, на первый взгляд квадрокоптер оснащен
-                  <br> мощным лазером, замаскированным под
-                  стандартную камеру.
+                  <p class="selling-text-small">Этот обычный, на первый взгляд квадрокоптер оснащен
+                  мощным лазером, замаскированным под стандартную камеру.
+                  </p>
 
                   <a class="navigation-link" href="">Подробнее</a>
                   <div class="technical-text">
@@ -87,7 +97,7 @@
                       <span class="text-destroy-radius">Радиус поражения</span>
                     </div>
                   </div>
-                  <li class="slider-pagination-item">
+                  <!--<li class="slider-pagination-item">
                     <button class="slider-pagination-button slider-pagination-button-current" type="button">
                       <span class="visually-hidden">2 слайд</span>
                     </button>
@@ -130,7 +140,7 @@
                           <span class="text-destroy-radius">Характеристика 3 девайса</span>
                         </div>
                       </div>
-                  </li>
+                  </li>-->
       </section>
 
       <section class="categories">
@@ -192,6 +202,7 @@
           <button class="credit-button" type="button">
             Кредит
           </button>
+          <div class="delivery-button-list-clopy">
           <ul class="delivery-list">
             <li class="delivery-button-list">
               <h3 class="delivery-text-main">Доставка</h3>
@@ -201,7 +212,7 @@
                 </p>
                 <img class="postman" src="images/postman.svg" width="150" height="100" alt="">
               </li>
-            <li class="security-button-list">
+            <!--<li class="security-button-list">
               <h3 class="security-text-main">Гарантия</h3>
                 <p class="security-text">Тест раздела Гарантия
                 </p>
@@ -210,8 +221,9 @@
               <h3 class="credit-text-main">Кредит</h3>
                 <p class="credit-text">Тест раздела Кредит
                 </p>
-            </li>
+            </li>-->
           </ul>
+        </div>
       </section>
 
       <section class="delivery-new">
@@ -303,22 +315,22 @@
       </section>
       <section class="footer-social-media">
         <ul class="footer-social-media-list">
-        <li class="footer-social-media-link">
-          <a class="social-media-link-telegram" href="#telegram">
-            <img class="telegram-image-logo" src="images/telegram.svg" width="60" height="60" alt="Мы в телеграме">
-          </a>
-        </li>
-        <li class="footer-social-media-link">
-          <a class="social-media-link-youtube" href="#youtube">
+          <li class="footer-social-media-link">
+            <a class="social-media-link-telegram" href="#telegram">
+              <img class="telegram-image-logo" src="images/telegram.svg" width="60" height="60" alt="Мы в телеграме">
+            </a>
+          </li>
+          <li class="footer-social-media-link">
+            <a class="social-media-link-youtube" href="#youtube">
               <img class="youtube-image-logo" src="images/youtube.svg" width="60" height="60" alt="Мы в ютубе">
-          </a>
-        </li>
-        <li class="footer-social-media-link">
-          <a class="social-media-link-youtube" href="#twitter">
+            </a>
+          </li>
+          <li class="footer-social-media-link">
+            <a class="social-media-link-youtube" href="#twitter">
               <img class="twitter-image-logo" src="images/twitter.svg" width="60" height="60" alt="Мы в твиттере">
-          </a>
-        </li>
-        </ul>
+            </a>
+          </li>
+          </ul>
       </section>
       <section class="footer-copyright">
         <p class="footer-copyright-text">
