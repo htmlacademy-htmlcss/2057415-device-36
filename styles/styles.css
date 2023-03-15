@@ -405,15 +405,13 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
+    border: none;
 }
 
 .product-list {
     display: flex;
 }
 
-select{
-    border: none;
-}
 
 .product-card-title-link {
     font-family: "Rubik", sans-serif;
@@ -455,6 +453,7 @@ select{
     color: #000000;
     letter-spacing: 0.2em;
     text-transform: uppercase;
+    text-decoration: none;
 }
 
 .pagination-btn {
