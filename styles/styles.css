@@ -414,3 +414,61 @@ body {
 select{
     border: none;
 }
+
+.product-card-title-link {
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    color: #000000;
+    text-decoration: none
+}
+
+.product-card-price {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: -0.02em;
+    color: #444444;
+    text-align: right;
+
+}
+
+.product-list {
+    list-style-type: none;
+}
+
+.load-more-button {
+    text-decoration: none;
+    align-items: center;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+
+.pagination-button,.pagination-btn {
+    font-size: 18px;
+    line-height: 21px;
+    align-items: center;
+    color: #000000;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.pagination-btn {
+    color: #444444;
+    opacity: 0.3;
+}
+
+.pagination-link {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    align-items: center;
+    color: #444444;
+    opacity: 0.6;
+    text-decoration: none;
+}
