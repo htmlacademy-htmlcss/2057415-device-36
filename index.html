@@ -7,61 +7,72 @@
   </head>
   <body>
     <header class="page-header">
-      <section class="page-logo">
-        <a class="navigation-logo-image" href="index.html">
-          <img class="logo" src="images/logo.svg" width="150" height="100" alt="Логотип интернет-магазина Девайс">
-        </a>
-      </section>
-      <section class="header-search">
-        <form class="header-search-form" action="https://echo.htmlacademy.ru" method="get">
-          <input class="header-search-site" type="search" placeholder="Поиск по сайту">
-          <button class="header-search-button" type="submit">Найти</button>
-        </form>
-      </section>
-      <section class="header-navigation-user">
-          <ul class="navigation-user">
-            <li class="navigation-item">
-              <a class="navigation-link" href="">
-                <img class="navigation-link-pic" src="images/icons-come.svg" widht="14" height="14" alt="">
-                Войти
-              </a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="">
-                <img class="navigation-link-pic-compare" src="images/icons-compare.svg" widht="14" height="14" alt="">
-                Сравнить
-              </a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="">
-                <img class="navigation-link-pic-basket" src="images/icons-basket.svg" widht="14" height="14" alt="">
-                Корзина
-              </a>
-            </li>
-          </section>
-          <section class="header-catalog-navigation">
-          <ul class="navigation-list">
-            <li class="navigation-item">
-              <a class="navigation-link" href="catalog.html">Каталог товаров</a>
-            </li>
-          </ul>
-        </section>
-      <section class="main-navigation">
-          <ul class="main-navigation-list">
-            <li class="navigation-item">
-              <a class="navigation-link" href="" >Доставка</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="" >Гарантия</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="" >Контакты</a>
-            </li>
-          </ul>
-      </section>
+      <div class="content-wrapper">
+        <div class="page-logo">
+          <a class="navigation-logo-image" href="index.html">
+            <img class="logo" src="images/logo.svg" width="145" height="36" alt="Логотип интернет-магазина Девайс">
+          </a>
+        </div>
+          <div class="header-search">
+
+            <form class="header-search-form" action="https://echo.htmlacademy.ru" method="get">
+              <input class="header-search-site" name="submit" placeholder="Поиск по сайту" type="search">
+                <button class="header-search-button" type="submit">Найти</button>
+            </form>
+
+
+              <div class="header-navigation-user">
+                <ul class="navigation-user navigation-user-xlist">
+                  <li class="navigation-item navigation-item-enter">
+                    <a class="navigation-link" href="">
+                      <img class="navigation-link-pic" src="images/icons-come.svg" widht="14" height="14" alt="">
+                        Войти
+                    </a>
+                  </li>
+                </ul>
+                <ul class="navigation-user user-menu-list">
+                  <li class="navigation-item navigation-item-compare">
+                    <a class="navigation-link" href="">
+                      <img class="navigation-link-pic-compare" src="images/icons-compare.svg" widht="14" height="14" alt="">
+                        Сравнить
+                    </a>
+                  </li>
+                  <li class="navigation-item navigation-item-basket">
+                    <a class="navigation-link" href="">
+                      <img class="navigation-link-pic-basket" src="images/icons-basket.svg" widht="14" height="14" alt="">
+                        Корзина
+                    </a>
+                  </li>
+                </ul>
+              </div>
+          </div>
+
+          <nav class="navigation-wrapper">
+            <div class="header-catalog-navigation">
+              <ul class="navigation-list">
+                <li class="navigation-item">
+                  <a class="navigation-link" href="catalog.html">Каталог товаров</a>
+                </li>
+              </ul>
+            </div>
+            <div class="main-navigation">
+                <ul class="main-navigation-list">
+                  <li class="navigation-item">
+                    <a class="navigation-link" href="" >Доставка</a>
+                  </li>
+                  <li class="navigation-item">
+                    <a class="navigation-link" href="" >Гарантия</a>
+                  </li>
+                  <li class="navigation-item">
+                    <a class="navigation-link" href="" >Контакты</a>
+                  </li>
+                </ul>
+          </nav>
+
+      </div>
   </header>
 
-    <main class="main-index">
+    <main class="main-container main-index">
       <h1 class="visually-hidden">Интернет-магазин Девайс</h1>
       <section class="electronics-gallery">
         <h2 class="visually-hidden">Слайдер электроники</h2>
@@ -231,11 +242,7 @@
           </ul>
 
 
-
-
-
-
-      </section>
+       </section>
 
       <section class="delivery-new">
         <h2 class="delivery-new-text">
