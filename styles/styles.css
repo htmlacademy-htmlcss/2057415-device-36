@@ -284,6 +284,7 @@ body {
     padding-left: 40px;
     padding-right: 15px;
     padding-top: 10px;
+
 }
 
 .selling-text {
@@ -324,7 +325,9 @@ body {
     display: block;
 }
 
-
+.main-page-slider {
+    margin-bottom: 20px;
+}
 
 
 
@@ -532,6 +535,7 @@ body {
     color: #000000;
 }
 
+/*Категории товаров*/
 
 .categories-tech {
     display: flex;
@@ -539,8 +543,19 @@ body {
     align-items: center;
     margin-bottom: 38px;
     list-style-type: none;
-    background-color: #FFE17F;
+
 }
+
+.categories-tech-image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFE17F;
+    margin-bottom: 32px;
+    width: 160px;
+    height: 160px;
+}
+
 
 
 
