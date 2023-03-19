@@ -7,6 +7,7 @@
   </head>
   <body>
     <header class="page-header">
+      <h1 class="visually-hidden">Интернет магазин Девайс</h1>
       <div class="content-wrapper">
         <div class="page-logo">
           <a class="navigation-logo-image" href="index.html">
@@ -48,25 +49,25 @@
           </div>
 
           <nav class="navigation-wrapper">
-            <div class="header-catalog-navigation">
+            <!-- <div class="header-catalog-navigation">  -->
               <ul class="navigation-list">
-                <li class="navigation-item">
+                <li class="navigation-item navigation-item-user-catalog">
                   <a class="navigation-link" href="catalog.html">Каталог товаров</a>
                 </li>
-              </ul>
-            </div>
-            <div class="main-navigation">
-                <ul class="main-navigation-list">
-                  <li class="navigation-item">
+              <!-- </ul> -->
+            <!-- </div> -->
+            <!-- <div class="main-navigation"> -->
+               <!-- <ul class="main-navigation-list"> -->
+                  <li class="navigation-item navigation-item-delivery-user">
                     <a class="navigation-link" href="" >Доставка</a>
                   </li>
-                  <li class="navigation-item">
+                  <li class="navigation-item navigation-item-garant">
                     <a class="navigation-link" href="" >Гарантия</a>
                   </li>
                   <li class="navigation-item">
                     <a class="navigation-link" href="" >Контакты</a>
                   </li>
-                </ul>
+              </ul>
           </nav>
 
       </div>
@@ -74,31 +75,59 @@
 
     <main class="main-container main-index">
       <h1 class="visually-hidden">Интернет-магазин Девайс</h1>
-      <section class="electronics-gallery">
-        <h2 class="visually-hidden">Слайдер электроники</h2>
-          <img class="slider-image" src="images/slider-1.png" alt="Девайсы">
-            <button class="slider-button slider-prev" type="button">
-              <span class="visually-hidden">Предыдущий девайс</span>
-            </button>
-            <button class="slider-button slider-next" type="button">
-              <span class="visually-hidden">Следующий девайс</span>
-            </button>
+        <div class="content-wrapper">
+          <section class="electronics-gallery main-page-slider">
+            <h2 class="visually-hidden">Популярные товары</h2>
+              <!-- <img class="slider-image" src="images/slider-1.png" alt="Девайсы">
+                <button class="slider-button slider-prev" type="button">
+                  <span class="visually-hidden">Предыдущий девайс</span>
+                </button>
+                <button class="slider-button slider-next" type="button">
+                  <span class="visually-hidden">Следующий девайс</span>
+                </button>   -->
             <ol class="slider-pagination">
-              <li class="slider-pagination-item">
-                <button class="slider-pagination-button slider-pagination-button-current" type="button">
+              <li class="slider-pagination-item slider-pagination-helicopter">
+                <h3 class="visually-hidden">Квадрокоптер с мощным лазером</h3>
+                  <div class="slider-image-copter">
+                    <img class="slider-image" src="images/slider-1.png" width="" height="" alt="Квадрокоптер с мощным лазером">
+                  </div>
+                  <div class="slide-text-information">
+                    <p class="selling-text">
+                      Порхает как бабочка, <br>жалит как пчела!
+                    </p>
+                    <p class="selling-text-small">Этот обычный, на первый взгляд квадрокоптер оснащен<br>
+                        мощным лазером, замаскированным под стандартную камеру.
+                    </p>
+                    <a class="navigation-link-slide" href="#">Подробнее</a>
+
+                    <dl class="data-information data-text-information">
+                      <div class="important-information-block">
+                        <dd class="important-information">
+                        800&nbsp;М
+                        </dd>
+                        <dt class="important-information-add">
+                          Дальность полёта
+                        </dt>
+                      </div>
+                      <div class="important-information-block">
+                        <dd class="important-information">
+                          50&nbsp;М
+                        </dd>
+                        <dt class="important-information-add">
+                          Радиус поражения
+                       </dt>
+                      </div>
+                    </dl>
+                  </div>
+                </ol>
+
+
+
+                <!--<button class="slider-pagination-button slider-pagination-button-current" type="button">
                   <span class="visually-hidden">1 слайд</span>
                 </button>
 
-                  <strong class="selling-text">
-                    Порхает как бабочка,<br>
-                     жалит как пчела!
-                  </strong>
-                  <p class="selling-text-small">Этот обычный, на первый взгляд квадрокоптер оснащен
-                  мощным лазером, замаскированным под стандартную камеру.
-                  </p>
-
-                  <a class="navigation-link" href="">Подробнее</a>
-                  <div class="technical-text">
+                   <div class="technical-text">
                     <div class="distance-flight">
                       <span class="data-distance-flight">800 м</span>
                       <span class="text-distance-flight">Дальность полёта</span>
@@ -107,7 +136,8 @@
                       <span class="data-destroy-radius">50 м</span>
                       <span class="text-destroy-radius">Радиус поражения</span>
                     </div>
-                  </div>
+                  </div>  -->
+
                   <!--<li class="slider-pagination-item">
                     <button class="slider-pagination-button slider-pagination-button-current" type="button">
                       <span class="visually-hidden">2 слайд</span>
@@ -207,6 +237,7 @@
             </li>
           </ul>
       </section>
+    </div>
 
       <section class="delivery-main">
         <h2 class="visually-hidden">Сервис</h2>
