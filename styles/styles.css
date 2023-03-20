@@ -51,12 +51,14 @@ body {
     box-sizing: border-box;
     width: 1160px;
     margin: 0 auto;
+    padding-left: ;
+    padding-right: ;
 
 }
 
 .page-logo {
     padding-left: 46px;
-
+    padding-right: 46px;
 }
 
 .navigation-logo-image {
@@ -142,7 +144,7 @@ body {
     list-style-type: none;
 }
 
-/* От сюда начинается навигация КАталог товаров - Доставка - Гарантия - Контакты */
+/* Каталог товаров - Доставка - Гарантия - Контакты */
 
 .navigation-wrapper {
     padding: 20px;
@@ -241,12 +243,23 @@ body {
 
 /* Отсюда слайдер*/
 
+.content-wrapper-slide {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 1160px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.slider-pagination {
+    padding-left: 0;
+}
+
 
 /* li слайдер*/
 .slider-pagination-item {
     display: flex;
-
-
 }
 
 .data-information {
@@ -256,6 +269,7 @@ body {
 .important-information {
     display: flex;
     flex-direction: column;
+    margin-left: 0;
 }
 
 .important-information-add {
@@ -272,11 +286,12 @@ body {
 
 /* img слайдер*/
 .slider-image-copter {
-
-
     width: 560px;
     height: 560px;
+}
 
+.slider-image {
+    margin: 0 auto;
 }
 
 /* div с текстом справа слайдер*/
@@ -333,10 +348,6 @@ body {
 
 
 
-
-.electronics-gallery {
-
-}
 
 .selling-text {
     font-family: "Raleway", sans-serif;
@@ -538,12 +549,23 @@ body {
 
 /*Линейка категории товаров*/
 
+.categories-tech-wrapper {
+
+
+
+}
+
+
+
 .categories-tech {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 38px;
     list-style-type: none;
+    margin: 0 auto;
+    width: 1160px;
+    padding-left: 5px;
+    padding-right: 5px;
 
 }
 
@@ -555,6 +577,7 @@ body {
     margin-bottom: 32px;
     width: 160px;
     height: 160px;
+
 }
 
 .menu-categories-popular {
@@ -612,8 +635,7 @@ body {
 
 
 /* Секция доставка редкого товара*/
-
-.delivery-new-wrapper {
+.delivery-new-wrapper-link {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -632,13 +654,35 @@ body {
     background-color: #FFE17F;
 }
 
+.link-wrapper {
+    display: flex;
+
+    text-decoration: none;
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.delivery-new-text {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 23px;
+    text-decoration: none;
+    list-style-type: none;
+    color: #000000;
+    text-transform: uppercase;
+}
+
 
 
 /*Секция о нас и контакты*/
 
 .main-info-wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    width: 1160px;
+    margin: 0 auto;
     margin-bottom: 70px;
 
 }
