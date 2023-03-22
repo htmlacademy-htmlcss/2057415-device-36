@@ -172,80 +172,107 @@
               <div class="catalog-filter-block">
                 <div class="catalog-filter-title-block">
                   <h2 class="catalog-filter-title-user">Фильтр</h2>
-
                 </div>
 
-                  <form class="form-catalog form-catalog-price" action="https://echo.htmlacademy.ru" method="get">
-                    <!--<fieldset class="field-catalog-fieldset">-->
-                      <legend class="catalog-special-title">Стоимость</Legend>
-                  </form>
-                        <!--<label for="rating">Стоимость</label>
-                        от 0<input type = "range" min = "0" max = "10000" step = "1"
-                        name = "rangeout" id = "rangeout" value = "5000">  до 5000 -->
-                    <!--</fieldset>-->
+                    <!-- Большая форма. Левый блок -->
 
+                <form class="form-catalog form-catalog-price" action="https://echo.htmlacademy.ru" method="get">
 
-                <div class="catalog-filter-color-block">
-                  <!--<fieldset class="catalog-filter-group">-->
+                  <fieldset class="field-catalog-fieldset">
+                    <label class="rating-price" for="rating">Стоимость</label>
+                        <!--от 0<input type = "range" min = "0" max = "10000" step = "1"
+                        name = "rangeout" id = "rangeout" value = "5000">  до 5000-->
+
+                  </fieldset>
+
+                  <fieldset class="catalog-filter-group">
                     <legend class="catalog-filter-color-title">
-                        Цвет
+                      Цвет
                     </legend>
                     <ul class="catalog-filter-list">
-                        <li class="catalog-filter-item">
-                            <label class="control">
-                                <input class="control-input" type="checkbox" id="black" name="color" value="black" checked>
-                                    Чёрный
-                            </label>
-                        </li>
-                        <li class="catalog-filter-item">
-                            <label class="control">
-                                <input class="control-input" type="checkbox" id="white" name="color" value="white" checked>
-                                    Белый
-                            </label>
-                        </li>
-                        <li class="catalog-filter-item">
-                            <label class="control">
-                                <input class="control-input" type="checkbox" id="blue" name="color" value="blue">
-                                    Синий
-                            </label>
-                        </li>
-                        <li class="catalog-filter-item">
-                            <label class="control">
-                                <input class="control-input" type="checkbox" id="red" name="color" value="red">
-                                    Красный
-                            </label>
-                        </li>
-                        <li class="catalog-filter-item">
-                            <label class="control">
-                                <input class="control-input" type="checkbox" id="pink" name="color" value="pink">
-                                    Розовый
-                            </label>
-                        </li>
+                      <li class="catalog-filter-item">
+                          <label class="control">
+                              <input class="control-input" type="checkbox" id="black" name="color" value="black" checked>
+                                  Чёрный
+                          </label>
+                      </li>
+                      <li class="catalog-filter-item">
+                          <label class="control">
+                              <input class="control-input" type="checkbox" id="white" name="color" value="white" checked>
+                                  Белый
+                          </label>
+                      </li>
+                      <li class="catalog-filter-item">
+                          <label class="control">
+                              <input class="control-input" type="checkbox" id="blue" name="color" value="blue">
+                                  Синий
+                          </label>
+                      </li>
+                      <li class="catalog-filter-item">
+                          <label class="control">
+                              <input class="control-input" type="checkbox" id="red" name="color" value="red">
+                                  Красный
+                          </label>
+                      </li>
+                      <li class="catalog-filter-item">
+                          <label class="control">
+                              <input class="control-input" type="checkbox" id="pink" name="color" value="pink">
+                                  Розовый
+                          </label>
+                      </li>
                     </ul>
-                </fieldset>
-                </div>
-                <div class="catalog-filter-bluetooth-block">
-                  <!--<fieldset class="catalog-special-difference">-->
+                  </fieldset>
+
+                  <fieldset class="catalog-special-difference">
                     <legend class="catalog-special-title">Bluetooth</Legend>
-                        <ul class="catalog-special-list">
-                            <li class="catalog-special-item">
-                                <label class="control">
-                                    <input class="control-input" type="radio" id="yes" name="bluetooth" value="Yes" checked>
-                                        Есть
-                                </label>
+                      <ul class="catalog-special-list">
+                          <li class="catalog-special-item">
+                              <label class="control">
+                                  <input class="control-input" type="radio" id="yes" name="bluetooth" value="Yes" checked>
+                                      Есть
+                              </label>
+                          </li>
+                          <li class="catalog-filter-item">
+                              <label class="control">
+                                <input class="control-input" type="radio" id="no" name="bluetooth" value="No">
+                                  Нет
+                              </label>
                             </li>
-                            <li class="catalog-filter-item">
-                                <label class="control">
-                                  <input class="control-input" type="radio" id="no" name="bluetooth" value="No">
-                                    Нет
-                                </label>
-                              </li>
-                            </ul>
-                </fieldset>
-                </div>
-                <div class="catalog-filter-button-block">
-                  <button class="button filter-button" type="submit">Показать</button>
-                </div>
+                          </ul>
+                  </fieldset>
+
+                  <button class="button filter-button" type="submit">
+                    Показать
+                  </button>
+                </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
               </div>
 
                             <!-- Правый блок полностью-->

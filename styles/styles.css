@@ -1085,8 +1085,8 @@ body {
 }
                         /* Левый блок. Фильтр. Цена */
 .form-catalog-price {
-    width: 200px;
-    height: 95px;
+    width: 320px;
+
     margin: 0;
 }
 
@@ -1440,4 +1440,53 @@ body {
 
 .catalog-navigation-item-users {
     padding-left: 36px;
+}
+
+/* Форма. Левый блок   */
+
+.catalog-special-difference {
+    border: 0 none;
+}
+
+.catalog-filter-group {
+    border: 0 none;
+
+}
+
+.field-catalog-fieldset {
+    border: 0 none;
+    border-top: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    width: 200px;
+    height: 95px;
+
+}
+
+.catalog-filter-color-title {
+
+}
+
+.catalog-filter-color-title {
+    padding: 0;
+}
+
+.catalog-special-title {
+    padding: 0;
+}
+
+.filter-button {
+    width: 100%;
+    border: 0;
+}
+
+.catalog-special-list {
+    padding-left: 30px;
+}
+
+.catalog-filter-list {
+    padding-left: 30px;
+}
+
+.rating-price,.catalog-filter-color-title,.catalog-special-title {
+    padding-left: 35px;
 }
