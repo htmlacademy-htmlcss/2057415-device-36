@@ -1071,9 +1071,6 @@ body {
 }
 
 .catalog-filter-block {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
     width: 320px;
     height: 1316px;
 }
@@ -1086,8 +1083,8 @@ body {
     height: 69px;
     margin: 0;
 }
-
-.catalog-filter-price-block {
+                        /* Левый блок. Фильтр. Цена */
+.form-catalog-price {
     width: 200px;
     height: 95px;
     margin: 0;
@@ -1118,11 +1115,6 @@ body {
     width: 840px;
 }
 
-.catalog-product-first-block {
-    height: 948px;
-    margin-right: 0;
-    padding-bottom: 44px;
-}
 
 
 
@@ -1133,6 +1125,7 @@ body {
     align-items: center;
     padding: 0;
     margin: 0;
+    padding-bottom: 44px;
 
 }
 
@@ -1204,6 +1197,26 @@ body {
     margin: 0 auto;
 }
 
+            /* Карточки продукта */
+
+.product-card-title-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.product-card-image-link {
+    display: block;
+}
+
+.product-card-title-item-link {
+    display: block;
+    text-decoration: none;
+
+}
+
+/*Это был список название - цена товара
 .product-card-title-list {
     display: flex;
     justify-content: space-between;
@@ -1213,6 +1226,7 @@ body {
     list-style-type: none;
     padding-top: 30px;
 }
+*/
 
 .product-card-title-item {
     font-family: 'Rubik';
@@ -1224,6 +1238,8 @@ body {
     color: #000000;
     text-decoration: none;
     list-style-type: none;
+    margin: 0;
+    padding-top: 30px;
 }
 
 .product-card-link {
@@ -1239,12 +1255,13 @@ body {
 }
 
 .product-card-title-price {
-    font-family: 'Rubik';
+    font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
     color: #444444;
+    padding-top: 10px;
 }
 
           /* Левый блок фильтр */

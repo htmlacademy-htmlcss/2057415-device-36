@@ -142,7 +142,7 @@
       </div>
   </header>
 
-                                <!--Секция моноподы для селфи-->
+                  <!--Секция название: "Mоноподы для селфи" и хлебные крошки-->
       <main class="page-main">
         <section class="main-content-title">
           <div class="title-monopods-wrapper">
@@ -164,7 +164,7 @@
           </div>
         </section>
 
-                                        <!--Главный контент-->
+                                <!--Main. Левый блок-->
 
         <section class="catalog-filter">
           <div class="catalog-wrapper">
@@ -172,16 +172,19 @@
               <div class="catalog-filter-block">
                 <div class="catalog-filter-title-block">
                   <h2 class="catalog-filter-title-user">Фильтр</h2>
+
                 </div>
-                <div class="catalog-filter-price-block">
-                  <form class="form-catalog" action="https://echo.htmlacademy.ru" method="get">
+
+                  <form class="form-catalog form-catalog-price" action="https://echo.htmlacademy.ru" method="get">
                     <!--<fieldset class="field-catalog-fieldset">-->
                       <legend class="catalog-special-title">Стоимость</Legend>
+                  </form>
                         <!--<label for="rating">Стоимость</label>
                         от 0<input type = "range" min = "0" max = "10000" step = "1"
                         name = "rangeout" id = "rangeout" value = "5000">  до 5000 -->
-                    </fieldset>
-                </div>
+                    <!--</fieldset>-->
+
+
                 <div class="catalog-filter-color-block">
                   <!--<fieldset class="catalog-filter-group">-->
                     <legend class="catalog-filter-color-title">
@@ -226,10 +229,10 @@
                     <legend class="catalog-special-title">Bluetooth</Legend>
                         <ul class="catalog-special-list">
                             <li class="catalog-special-item">
-                                <lebel class="control">
+                                <label class="control">
                                     <input class="control-input" type="radio" id="yes" name="bluetooth" value="Yes" checked>
                                         Есть
-                                </lebel>
+                                </label>
                             </li>
                             <li class="catalog-filter-item">
                                 <label class="control">
@@ -244,8 +247,12 @@
                   <button class="button filter-button" type="submit">Показать</button>
                 </div>
               </div>
-              <div class="catalog-product-block">  <!-- Правый блок полностью-->
-                <div class="catalog-product-header-block"> <!-- 1 блок из 4 -->
+
+                            <!-- Правый блок полностью-->
+              <div class="catalog-product-block">
+
+                            <!-- 1 блок из 4. Название категорий фильтра -->
+                <div class="catalog-product-header-block">
                   <div class="select-control-title-mini">
                     <h2 class="select-control-title">Сортировка</h2>
                   </div>
@@ -274,78 +281,94 @@
                   </ul>
                   </div>
                 </div>
-                                <!-- 2 блок из 4 -->
-                <div class="catalog-product-first-block">
+
+                                <!-- 2 блок из 4. Карточки товаров -->
                   <ul class="product-list">
                     <li class="product-card">
-                      <a class="product-card-link" href="product.html">
+                      <!--<a class="product-card-link" href="product.html">-->
                         <div class="product-card-image-wrapper">
+                          <a class="product-card-image-link" href="#">
                           <img class="product-card-image" src="images/catalog/product-2.png"
                           alt="Любительская селфи-палка"" width="" height="">
+                          </a>
                         </div>
                         <div class="product-card-title-block">
-                          <ul class="product-card-title-list">
-                            <li class="product-card-title-item">
+                          <a class="product-card-title-item-link"-link" href="#">
+                            <h3 class="product-card-title-item">
                               Любительская<br> селфи-палка
-                            </li>
-                            <li class="product-card-title-price">
-                              500 ₽
-                            </li>
-                          </div>
-                      </a>
+                            </h3>
+                          </a>
+                            <span class="product-card-title-price">
+                            500 ₽
+                          </span>
+                        </div>
+                     <!-- </a> -->
                     </li>
+
                     <li class="product-card">
-                      <a class="product-card-link" href="product.html">
+                      <!--<a class="product-card-link" href="product.html">-->
                         <div class="product-card-image-wrapper">
-                          <img class="product-card-image" src="images/catalog/product-3.png"
+                          <a class="product-card-image-link" href="#">
+                            <img class="product-card-image" src="images/catalog/product-3.png"
                           alt="Профессиональная селфи-палка"" width="" height="">
+                          </a>
                         </div>
                         <div class="product-card-title-block">
-                          <ul class="product-card-title-list">
-                            <li class="product-card-title-item">
+                          <a class="product-card-title-item-link"-link" href="#">
+                            <h3 class="product-card-title-item">
                               Профессиональная<br> селфи-палка
-                            </li>
-                            <li class="product-card-title-price">
+                            </h3>
+                          </a>
+                            <span class="product-card-title-price">
                               1 500 ₽
-                            </li>
-                          </div>
-                      </a>
+                            </span>
+                        </div>
+                  <!--    </a> -->
                     </li>
+
                     <li class="product-card">
-                      <a class="product-card-link" href="product.html">
+                 <!-- <a class="product-card-link" href="product.html"> -->
                         <div class="product-card-image-wrapper">
-                          <img class="product-card-image" src="images/catalog/product-4.png"
-                          alt="Непотопляемая селфи-палка" width="" height="">
+                          <a class="product-card-image-link" href="#">
+                            <img class="product-card-image" src="images/catalog/product-4.png"
+                            alt="Непотопляемая селфи-палка" width="" height="">
+                          </a>
                         </div>
                         <div class="product-card-title-block">
-                          <ul class="product-card-title-list">
-                            <li class="product-card-title-item">
+                          <a class="product-card-title-item-link"-link" href="#">
+                            <h3 class="product-card-title-item">
                               Непотопляемая<br> селфи-палка
-                            </li>
-                            <li class="product-card-title-price">
+                            </h3>
+                          </a>
+                            <span class="product-card-title-price">
                               2 500 ₽
-                            </li>
-                          </div>
-                      </a>
+                            </span>
+                        </div>
+               <!--   </a>  -->
                     </li>
+
                     <li class="product-card">
-                      <a class="product-card-link" href="product.html">
+                      <!--<a class="product-card-link" href="product.html">-->
                         <div class="product-card-image-wrapper">
-                          <img class="product-card-image" src="images/catalog/product-5.png"
-                          alt="Селфи-палка Следуй за мной" width="" height="">
+                          <a class="product-card-image-link" href="#">
+                            <img class="product-card-image" src="images/catalog/product-5.png"
+                            alt="Селфи-палка Следуй за мной" width="" height="">
+                          </a>
                         </div>
                         <div class="product-card-title-block">
-                          <ul class="product-card-title-list">
-                            <li class="product-card-title-item">
+                          <a class="product-card-title-item-link"-link" href="#">
+                            <h3 class="product-card-title-item">
                               Селфи-палка "Следуй<br> за мной"
-                            </li>
-                            <li class="product-card-title-price">
+                            </h3>
+                          </a>
+                            <span class="product-card-title-price">
                               1 500 ₽
-                            </li>
-                          </div>
-                      </a>
+                            </span>
+                        </div>
+                      <!--</a>-->
                     </li>
-                </div>
+                  </ul>
+
                             <!-- 3 блок из 4 -->
                 <div class="catalog-load-more-blok">
                   <a class="load-more-button" href="#">Загрузить ещё</a>
