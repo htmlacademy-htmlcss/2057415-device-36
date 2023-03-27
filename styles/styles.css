@@ -49,10 +49,10 @@ body {
 
 .content-wrapper {
     box-sizing: border-box;
-    width: 1160px;
+    width: 1200px;
     margin: 0 auto;
-    padding-left: ;
-    padding-right: ;
+    padding-left: 20px;
+    padding-right: 20px;
 
 }
 
