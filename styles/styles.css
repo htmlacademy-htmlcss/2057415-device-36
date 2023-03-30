@@ -1152,7 +1152,8 @@ body {
 .product-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-
+    row-gap: 44px;
+    column-gap: 40px;
     /*display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -1162,6 +1163,7 @@ body {
     padding-bottom: 44px;
     list-style-type: none;
     padding-left: 40px;
+    padding-right: 35px;
 }
 
 .product-card {
