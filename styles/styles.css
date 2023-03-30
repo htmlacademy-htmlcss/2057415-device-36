@@ -1102,7 +1102,7 @@ body {
 
 .catalog-filter-block {
     width: 320px;
-    height: 1316px;
+
 }
 
 
@@ -1143,7 +1143,7 @@ body {
        /* Catalog Правый блок   */
 .catalog-product-block {
     display: grid;
-    grid-template-rows: min-content 1 fr min-content min-content;
+    grid-template-rows: min-content 1fr min-content min-content;
     width: 840px;
 
 }
@@ -1152,7 +1152,8 @@ body {
 .product-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-
+    row-gap: 44px;
+    column-gap: 40px;
     /*display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -1162,14 +1163,15 @@ body {
     padding-bottom: 44px;
     list-style-type: none;
     padding-left: 40px;
+    padding-right: 35px;
 }
 
 .product-card {
     display: grid;
     grid-template-rows: 380px min-content;
-    row-gap: 10px;
+    row-gap: 70px;
     width: 360px;
-    height: 452px;
+    /*height: 452px;*/
 }
 
 .product-card-image {
@@ -1209,6 +1211,7 @@ body {
     height: 71px;
     margin: 0 auto;
     padding-top: 44px;
+    padding-bottom: 78px;
 }
 
 .pagination-list {
@@ -1256,7 +1259,7 @@ body {
 .product-card-title-block {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
 
 }
 
@@ -1293,7 +1296,7 @@ body {
     text-decoration: none;
     list-style-type: none;
     margin: 0;
-    padding-top: 30px;
+    /*padding-top: 30px;*/
 }
 
 .product-card-link {
@@ -1309,13 +1312,14 @@ body {
 }
 
 .product-card-title-price {
+
     font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
     color: #444444;
-    padding-top: 10px;
+    /*padding-top: 10px;*/
 }
 
           /* Левый блок фильтр */
