@@ -662,9 +662,10 @@ body {
 }
 
 .delivery-button-list {
-    max-width: 694px;
+    width: 694px;
     padding-left: 40px;
     position: relative;
+
 }
 
 .delivery-button-list-postman::after {
@@ -672,8 +673,9 @@ body {
     background-size: 136px 164px;
     content: "";
     position: absolute;
-    top: 8px;
-    right: -280px;
+    /*transform-origin: 50% 50%;*/
+    top: 4%;
+    left: 80%;
     width: 180px;
     height: 200px;
     background-repeat: no-repeat;
@@ -920,14 +922,16 @@ body {
 
 .footer-social-media-list {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    width: 220px;
-    height: 60px;
-    margin-left: 100px;
+    width: 150px;
+    padding-left: 0;
+    box-sizing: border-box;
+    margin-left: 140px;
 }
 
 .footer-social-media-link {
+
     width: 40px;
     height: 40px;
 }
@@ -1857,4 +1861,103 @@ body {
 
 .contact-phone-link {
     color: #444444;
+}
+
+.footer-list-link:hover {
+    color: #FFC700;
+    text-decoration: underline;
+}
+
+.footer-list-link:focus {
+    border: 2px solid #AF4FFF;
+    outline: none;
+}
+
+.footer-list-link:active {
+    opacity: 0.3;
+    text-decoration: underline;
+}
+
+.footer-phone-link:hover {
+    color: #FFC700;
+    text-decoration: underline;
+}
+
+.footer-phone-link:focus {
+    border: 2px solid #AF4FFF;
+    outline: none;
+}
+
+.footer-phone-link:active {
+    opacity: 0.3;
+    text-decoration: underline;
+}
+
+.logo-html-academy {
+    fill: #FFC700;
+    stroke: inherit;
+    stroke-width: inherit;
+}
+
+
+.footer-copyright-link:hover .logo-html-academy{
+    fill: #FFFFFF;
+}
+
+.footer-copyright-link:focus {
+    border: 1px solid #AF4FFF;
+    outline: none;
+}
+
+.footer-copyright-link:active .logo-html-academy {
+    fill: #FFFFFF;
+    opacity: 0.3;
+}
+
+
+.social-media-link {
+    display: flex;
+}
+
+.telegram-image-logo {
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+.twitter-image-logo {
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+
+    /*fill: #FFF;
+    stroke: inherit;
+    stroke-width: inherit;*/
+}
+
+
+.social-media-link:hover .twitter-image-logo {
+    background-color: #FFC700;
+}
+
+.youtube-image-logo {
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+
+}
+
+.social-media-link:hover .youtube-image-logo {
+    background-color: #FFC700;
+}
+
+.social-media-link:hover .telegram-image-logo {
+    background-color: #FFC700;
+}
+
+.social-media-link:focus {
+    border: 2px solid #AF4FFF;
+    outline: none;
+}
+
+.social-media-link:active {
+    opacity: 0.3;
 }
