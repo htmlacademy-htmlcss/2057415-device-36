@@ -180,7 +180,33 @@
                 <form class="form-catalog form-catalog-price" action="https://echo.htmlacademy.ru" method="get">
 
                   <fieldset class="field-catalog-fieldset">
-                    <label class="rating-price" for="rating">Стоимость</label>
+                    <legend class="rating-price" for="rating">Стоимость</legend>
+                      <div class="range-all-block">
+
+                        <div class="range-input">
+                          <div class="range-input-scale">
+                            <div class="range-input-scale-persent">
+                            <button class="button-btn button-min" type="button"><button>
+                            <button class="button-btn button-max" type="button"><button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="range-filter-input">
+                          <label class="range-filter-input-min filter-input-catalog">
+                            от
+                            <input class="range-input-input-min filter-input--catalog" name="price-min" type="text" value="0">
+                          </label>
+                          <label class="range-filter-input-max filter-input-catalog">
+                            до
+                            <input class="range-input-input-max filter-input--catalog" name="price-max" type="text" value="5000">
+                          </label>
+                        </div>
+
+
+                      </div>
+
+
+
                         <!--от 0<input type = "range" min = "0" max = "10000" step = "1"
                         name = "rangeout" id = "rangeout" value = "5000">  до 5000-->
 
