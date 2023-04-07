@@ -1803,6 +1803,15 @@ body {
 }
 
 .field-catalog-fieldset::before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 200px;
+    left: 0;
+    right: 0;
+    top: -45px;
+
+    background-color: #000000;
 
 }
 
