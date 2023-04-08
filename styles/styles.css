@@ -42,6 +42,14 @@ body {
     flex-grow: 1;
 }
 
+.main-wrapper {
+    width: 1160px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
 .page-header {
     color: #000000;
     padding-top: 20px;
@@ -163,13 +171,16 @@ body {
     display: flex;
     width: 1040px;
     justify-content: space-around;
+    align-items: ;
     margin: 0;
     padding-left: 0;
-
+    max-height: 50px;
 }
 
 .navigation-item-user-catalog {
     width: 293px;
+    height: 50px;
+    position: relative;
 }
 
 
@@ -186,7 +197,7 @@ body {
 }
 
 
-.navigation-list a {
+.navigation-list {
     font-family: 'Raleway'sans-serif;
     line-height: 21px;
     letter-spacing: 0.2em;
@@ -220,7 +231,7 @@ body {
 
 .navigation-item {
     list-style-type: none;
-
+    height: 100%;
 
 }
 
@@ -263,6 +274,9 @@ body {
 
 .slider-pagination {
     padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    counter-reset: slide;
 }
 
 
@@ -299,8 +313,72 @@ body {
     height: 560px;
 }
 
-.slider-image {
-    margin: 0 auto;
+
+.slider-image-copter {
+    position: relative;
+
+}
+
+
+
+.slider-prev {
+    background-image: url(../images/prev.svg);
+    width: 20px;
+    height: 60px;
+    border: none;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    padding: 0;
+    position: absolute;
+    top: 37%;
+    left: 6%;
+}
+
+.slider-button-central {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: 50%;
+    width: 530px;
+    height: 60px;
+
+}
+
+.slider-next {
+    background-image: url(../images/arrow.svg);
+    width: 20px;
+    height: 60px;
+    border: none;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    padding: 0;
+    position: absolute;
+    top: 37%;
+    right: 0;
+}
+
+.slider-prev:hover {
+    opacity: 0.6;
+}
+
+.slider-next:hover {
+    opacity: 0.6;
+}
+
+.slider-prev:focus {
+    outline: 2px solid #AF4FFF;
+}
+
+.slider-next:focus {
+    outline: 2px solid #AF4FFF;
+}
+
+.slider-prev:active {
+    opacity: 0.3;
+}
+
+.slider-next:active {
+    opacity: 0.3;
 }
 
 /* div с текстом справа слайдер*/
@@ -351,13 +429,75 @@ body {
 
 .slider-image {
     display: block;
+    margin: 0 auto;
 }
 
 .main-page-slider {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+
+
+}
+
+.electronics-gallery {
+    position: relative;
+    background-image: linear-gradient(-180deg, #FFE17F 85px, #fff 84px);
+}
+
+.slider-pagination-helicopter {
+    position: relative;
+    z-index: 0;
+    /*visibility: hidden;
+    transition: all 1.5s ease-in-out;
+    opacity: 0;*/
+}
+
+.point-conrol {
+    display: flex;
+    justify-content: space-between;
+    width: 76px;
+    height: 12px;
+    margin: 0 auto;
+}
+
+.point-conrol-button {
+    width: 12px;
+    height: 12px;
+    padding: 0;
+    border-radius: 50%;
+    border: 1px solid #000000;
+    background-color: #FFFFFF;
+    outline: 0;
+    cursor: pointer;
+}
+
+.point-conrol-button:hover {
+    opacity: 0.6;
+}
+
+.point-conrol-button:focus {
+    outline: 2px solid #AF4FFF;
+}
+
+.point-conrol-button:active {
+    opacity: 0.3;
 }
 
 
+
+
+.slider-pagination-helicopter::after {
+    position: absolute;
+    content: "0" counter(slide);
+    counter-increment: slide;
+    z-index: -1;
+    font-family: "Rubik". sans-serif;
+    font-weight: 700px;
+    font-size: 180px;
+    line-height: 30px;
+    right: 49px;
+    top: 34px;
+    color: #fff;
+}
 
 
 
@@ -416,6 +556,9 @@ body {
     text-transform: uppercase;
     color: #000000;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
 
 .navigation-link-bottom:hover {
@@ -442,6 +585,9 @@ body {
     text-transform: uppercase;
     color: #000000;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
 
 .catalog-navigation-link-bottom:hover {
@@ -703,8 +849,9 @@ body {
     list-style-type: none;
     margin: 0 auto;
     width: 1160px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 0;
+    /*padding-left: 5px;
+    padding-right: 5px;*/
 
 }
 
@@ -1953,6 +2100,9 @@ body {
 }
 
 .navigation-link-add-catalog {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-family: "Raleway";
     font-size: 18px;
     line-height: 21px;
@@ -1961,6 +2111,8 @@ body {
     text-transform: uppercase;
     color: #000000;
     text-decoration: none;
+    height: 100%;
+
 }
 
 .navigation-link-add-catalog:focus {
@@ -2357,5 +2509,53 @@ body {
     width: 280px;
     background: #000000;
     z-index: -1;
+}
 
+.catalog-add-navigation-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown-menu-link {
+    text-decoration: none;
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #000000;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+.dropdown-menu-submenu-item {
+    list-style-type: none;
+}
+
+.main-dropdown {
+    list-style-type: none;
+}
+
+.main-dropdown {
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: 222px 211px 211px;
+    column-gap: 0;
+    max-width: 1160px;
+}
+
+
+
+.main-menu-dropdown {
+    position: absolute;
+    z-index: 10;
+    /*visibility: hidden;
+    transform: ranslateY(15px);*/
+}
+
+.dropdown-menu-submenu {
+    display: grid;
+    padding-left: 0;
+    row-gap: 16px;
 }

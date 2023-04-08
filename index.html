@@ -52,37 +52,93 @@
             <!-- <div class="header-catalog-navigation">  -->
               <ul class="navigation-list">
                 <li class="navigation-item navigation-item-user-catalog">
-                  <a class="navigation-link-add-catalog" href="catalog.html">Каталог товаров</a>
+                  <a class="navigation-link-add-catalog navigation-link-add-plus" href="catalog.html">
+                    Каталог товаров
+                    <svg class="symbol-plus" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="none" viewBox="0 0 50 50"><circle cx="25" cy="25" r="24" stroke="#000" stroke-width="2" opacity=".3"/><g clip-path="url(#a)" opacity=".3"><path fill="#000" d="M33 24h-7v-7h-2v7h-7v2h7v7h2v-7h7v-2Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M17 17h16v16H17z"/></clipPath></defs></svg>
+                  </a>
+
+                  <ul class="main-dropdown main-menu-dropdown">
+                    <li class="dropdown-menu-item">
+                      <ul class="dropdown-menu-submenu">
+                        <li class="dropdown-menu-submenu-item">
+                          <a class="dropdown-menu-link" href="#">
+                            Виртуальная реальность
+                          </a>
+                        </li>
+                        <li class="dropdown-menu-submenu-item">
+                          <a class="dropdown-menu-link" href="#">
+                            Моноподы для селфи
+                          </a>
+                        </li>
+                        <li class="dropdown-menu-submenu-item">
+                          <a class="dropdown-menu-link" href="#">
+                            Экшн-камеры
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-menu-item">
+                      <ul class="dropdown-menu-submenu">
+                        <li class="dropdown-menu-submenu-item">
+                          <a class="dropdown-menu-link" href="#">
+                            Фитнес-браслеты
+                          </a>
+                        </li>
+                        <li class="dropdown-menu-submenu-item">
+                          <a class="dropdown-menu-link" href="#">
+                            Умные часы
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-menu-item">
+                      <ul class="dropdown-menu-submenu">
+                        <li class="dropdown-menu-submenu-item">
+                          <a class="dropdown-menu-link" href="#">
+                            Квадрокоптеры
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
                 </li>
               <!-- </ul> -->
             <!-- </div> -->
             <!-- <div class="main-navigation"> -->
                <!-- <ul class="main-navigation-list"> -->
-                  <li class="navigation-item navigation-item-delivery-user">
-                    <a class="navigation-link-bottom" href="" >Доставка</a>
-                  </li>
-                  <li class="navigation-item navigation-item-garant">
-                    <a class="navigation-link-bottom" href="" >Гарантия</a>
-                  </li>
-                  <li class="navigation-item">
-                    <a class="navigation-link-bottom" href="" >Контакты</a>
-                  </li>
+                <li class="navigation-item navigation-item-delivery-user">
+                  <a class="navigation-link-bottom" href="" >Доставка</a>
+                </li>
+                <li class="navigation-item navigation-item-garant">
+                  <a class="navigation-link-bottom" href="" >Гарантия</a>
+                </li>
+                <li class="navigation-item">
+                  <a class="navigation-link-bottom" href="" >Контакты</a>
+                </li>
               </ul>
           </nav>
 
       </div>
   </header>
                         <!--Секция слайдера-->
-    <main class="main-container main-index">
+  <main class="main-container main-index">
+    <div class="main-wrapper">
       <h1 class="visually-hidden">Интернет-магазин Девайс</h1>
         <section class="electronics-gallery main-page-slider">
             <h2 class="visually-hidden">Популярные товары</h2>
-              <div class="content-wrapper-slide">
+              <!--<div class="content-wrapper-slide">-->
                 <ol class="slider-pagination">
                   <li class="slider-pagination-item slider-pagination-helicopter">
                     <h3 class="visually-hidden">Квадрокоптер с мощным лазером</h3>
                       <div class="slider-image-copter">
                         <img class="slider-image" src="images/slider-1.png" width="550" height="550" alt="Квадрокоптер с мощным лазером">
+                          <!--<div class="slider-button-cetral">-->
+                            <button class="slider-prev" type="button" aria-label="Предыдущее фото">
+                            </button>
+                            <!--slider-image-button-->
+                            <button class="slider-next" type="button" aria-label="Следующее фото">
+                            </button>
+                          <!--</div>-->
                       </div>
                       <div class="slide-text-information">
                         <p class="selling-text">
@@ -112,7 +168,95 @@
                           </div>
                         </dl>
                       </div>
+                  </li>
+
+                  <!--<li class="slider-pagination-item slider-pagination-helicopter">
+                    <h3 class="visually-hidden">Спортивный браслет</h3>
+                      <div class="slider-image-copter">
+                        <img class="slider-image" src="images/slider-2.png" width="550" height="550" alt="Спортивный браслет">
+                      </div>
+                      <div class="slide-text-information">
+                        <p class="selling-text">
+                          Худеем<br> правильно!
+                        </p>
+                        <p class="selling-text-small">Мотивирующие фитнес-браслеты помогут найти в себе силы<br>
+                          не пропускать занятия и соблюдать диету.
+                        </p>
+                          <a class="navigation-link-slide" href="#">Подробнее</a>
+
+                          <dl class="data-information data-text-information">
+                            <div class="important-information-block">
+                              <dd class="important-information">
+                                48&nbsp;часов
+                              </dd>
+                              <dt class="important-information-add">
+                                Без подзарядки
+                              </dt>
+                            </div>
+                            <!--<div class="important-information-block">
+                              <dd class="important-information">
+                                50&nbsp;М
+                              </dd>
+                              <dt class="important-information-add">
+                                Радиус поражения
+                              </dt>
+                            </div>
+                          </dl>
+                      </div>
+                  </li>
+
+                  <li class="slider-pagination-item slider-pagination-helicopter">
+                    <h3 class="visually-hidden">Селфи-палка</h3>
+                      <div class="slider-image-copter">
+                        <img class="slider-image" src="images/slider-3.png" width="550" height="550" alt="Селфи-палка">
+                      </div>
+                      <div class="slide-text-information">
+                        <p class="selling-text">
+                          Делай селфи,<br> как Бед Стиллер!
+                        </p>
+                        <p class="selling-text-small">Самая длинная палка для селфи доступна в нашем магазине.<br>
+                          Восемь(Восемь, Карл!) метров длиной и весом всего 5 кг.
+                        </p>
+                          <a class="navigation-link-slide" href="#">Подробнее</a>
+
+                          <dl class="data-information data-text-information">
+                            <div class="important-information-block">
+                              <dd class="important-information">
+                                8,5&nbsp;м
+                              </dd>
+                              <dt class="important-information-add">
+                                Длина палки
+                              </dt>
+                            </div>
+                            <div class="important-information-block">
+                              <dd class="important-information">
+                                5&nbsp;кг
+                              </dd>
+                              <dt class="important-information-add">
+                                Вес палки
+                              </dt>
+                            </div>
+                            <div class="important-information-block">
+                              <dd class="important-information">
+                                Карбон
+                              </dd>
+                              <dt class="important-information-add">
+                                Материал
+                              </dt>
+                            </div>
+                          </dl>
+                      </div>
+                  </li>-->
+
                 </ol>
+              <!--</div>-->
+              <div class="point-conrol point_conrol">
+                <button class="point-conrol-button point-conrol--button" type="button" aria-label="1">
+                </button>
+                <button class="point-conrol-button" type="button" aria-label="2">
+                </button>
+                <button class="point-conrol-button" type="button" aria-label="3">
+                </button>
               </div>
       </section>
 
@@ -319,7 +463,8 @@
           </div>
         </div>
       </section>
-    </main>
+    </div>
+  </main>
     <footer class="page-footer">
       <div class="footer-wrapper">
         <div class="logo-block">
