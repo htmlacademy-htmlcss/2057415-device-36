@@ -2896,7 +2896,7 @@ basket__list {
     box-sizing: border-box;
     margin-top: 14px;
     border: none;
-    outline: 2px solid red;
+
 }
 
 
@@ -2964,7 +2964,7 @@ basket__list {
 
 .modal-content-form-name {
     position: relative;
-    outline: 2px solid red;
+
 }
 
 .auth-form-input-name-image {
@@ -2977,9 +2977,7 @@ basket__list {
     background-repeat: no-repeat;
 }
 
-.auth-form-input-email {
-    outline: 2px solid red;
-}
+
 
 .auth-form-input-email-image {
     position: absolute;
@@ -2997,7 +2995,7 @@ basket__list {
     flex-direction: row;
     width: 760px;
     height: 94px;
-    outline: 2px solid red;
+
     margin-top: 42px;
 }
 
@@ -3009,7 +3007,7 @@ basket__list {
 .form-textarea-input {
     width: 540px;
     height: 60px;
-    outline: 2px solid red;
+    border: none;
     padding: 10px 20px;
     box-sizing: border-box;
     margin-top: 14px;
@@ -3019,16 +3017,18 @@ basket__list {
     width: 180px;
     height: 94px;
     margin-left: 40px;
-    outline: 2px solid red;
+
 }
 
 .form-counter-input {
     width: 60px;
     height: 60px;
-    outline: 2px solid red;
+    border: none;
     box-sizing: border-box;
-    padding: 5px 25px;
-
+    padding: 5px 10px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
 }
 
 .form-counter-title {
@@ -3046,14 +3046,14 @@ basket__list {
 }
 
 .form-counter-minus {
-    outline: 2px solid red;
+
     width: 60px;
     height: 60px;
     box-sizing: border-box;
 }
 
 .form-counter-plus {
-    outline: 2px solid red;
+
     width: 60px;
     height: 60px;
     box-sizing: border-box;
@@ -3147,4 +3147,92 @@ basket__list {
     background: #FFE17F;
     height: 8px;
     width: 100%;
+}
+
+.modal-close-button:hover {
+    opacity: 0.6;
+}
+
+.modal-close-button:focus {
+    outline: 2px solid #AF4FFF;
+}
+
+.modal-close-button:active {
+    opacity: 0.3;
+}
+
+.modal-submit:hover {
+    background: #FFE17F;
+}
+
+.modal-submit:focus {
+    outline: 2px solid #AF4FFF;
+}
+
+.modal-submit:active {
+    background: #FFCC33;
+}
+
+.auth-form-input-name:hover {
+    background: #DCDCDC;
+}
+
+.auth-form-input-name:focus {
+    outline: 2px solid #AF4FFF;
+}
+
+.auth-form-input-name:active {
+
+}
+
+.auth-form-input-name:invalid {
+    outline: 2px solid #FF3D3D;
+}
+
+.auth-form-input-email:hover {
+    background: #DCDCDC;
+}
+
+.auth-form-input-email:focus {
+    outline: 2px solid #AF4FFF;
+}
+
+.auth-form-input-email:active {
+
+}
+
+.auth-form-input-email:invalid {
+    outline: 2px solid #FF3D3D;
+}
+
+.form-textarea-input:hover {
+    background: #DCDCDC;
+}
+
+.form-textarea-input:focus {
+    outline: 2px solid #AF4FFF;
+}
+
+.form-textarea-input:active {
+
+}
+
+.form-textarea-input:invalid {
+    outline: 2px solid #FF3D3D;
+}
+
+.form-counter-input:hover {
+    background: #DCDCDC;
+}
+
+.form-counter-input:focus {
+    outline: 2px solid #AF4FFF;
+}
+
+.form-counter-input:active {
+
+}
+
+.form-counter-input:invalid {
+    outline: 2px solid #FF3D3D;
 }
