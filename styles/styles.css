@@ -2850,6 +2850,8 @@ basket__list {
 
 .modal-auth {
     width: 920px;
+    padding: 72px 80px;
+    box-sizing: border-box;
 }
 
 .modal-close-button {
@@ -2885,8 +2887,7 @@ basket__list {
 .auth-form {
     display: flex;
     flex-direction: column;
-    width: 360px;
-    height: 114px;
+
 }
 
 .auth-form-input-name {
@@ -3085,6 +3086,8 @@ basket__list {
     border: none;
     outline: none;
     cursor: pointer;
+    width: 60px;
+    height: 60px;
 }
 
 .form-counter-minus {
@@ -3100,6 +3103,8 @@ basket__list {
     border: none;
     outline: none;
     cursor: pointer;
+    width: 60px;
+    height: 60px;
 }
 
 .form-counter-plus {
@@ -3235,4 +3240,39 @@ basket__list {
 
 .form-counter-input:invalid {
     outline: 2px solid #FF3D3D;
+}
+
+.auth-form {
+    display: grid;
+    outline: 2px solid red;
+    box-sizing: border-box;
+    width: 760px;
+    height: 332px;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr;
+    row-gap: 24px;
+    column-gap: 40px;
+}
+
+.modal-name-wrapper {
+    width: 360px;
+    height: 114px;
+}
+
+.modal-email-wrapper {
+    width: 360px;
+    height: 114px;
+}
+
+.modal-sum-wrapper {
+    display: grid;
+    grid-template-columns: 60px 60px 60px;
+    grid-template-rows: 34px 60px;
+
+    width: 180px;
+    height: 94px;
+}
+
+.form-counter-title {
+    grid-column: 1/4;
 }
