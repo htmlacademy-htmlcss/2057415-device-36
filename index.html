@@ -76,9 +76,9 @@
                         </p>
                       </div>
                       <div class="open_basket-button-block">
-                        <button class="open_basket-button">
+                        <a class="open_basket-button" href="#">
                           <span class="open-basket-title">Открыть корзину</span>
-                        </button>
+                        </a>
                       </div>
 
 
@@ -589,7 +589,7 @@
               <label class="auth-form-email-title" for="email">
                   Ваш e-mail:
               </label>
-                  <input class="auth-form-input-email" type="e-mail" id="e-mail" name="e-mail" placeholder="Введите e-mail">
+                  <input class="auth-form-input-email" type="email" id="e-mail" name="e-mail" placeholder="Введите e-mail">
                   <svg class="auth-form-input-email-image" xmlns="http://www.w3.org/2000/svg" width="15" height="12" viewBox="0 0 24 24"><path fill="#B3B3B3" d="m23.954 5.542-8.418 8.418a5.007 5.007 0 0 1-7.072 0L.046 5.542C.032 5.7 0 5.843 0 6v12a5.006 5.006 0 0 0 5 5h14a5.006 5.006 0 0 0 5-5V6c0-.157-.032-.3-.046-.458Z"/><path fill="#B3B3B3" d="m14.122 12.546 9.134-9.135A4.986 4.986 0 0 0 19 1H5A4.986 4.986 0 0 0 .744 3.411l9.134 9.135a3.007 3.007 0 0 0 4.244 0Z"/></svg>
                   <p class="form-add-email">
                   Забавный у вас адрес
@@ -610,12 +610,18 @@
                 Количество:
               </label>
               <svg class="form-counter-image" xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none"><circle cx="13" cy="13" r="13" fill="#FFE17F"/><path fill="#000" d="M14 7h-2v2h2V7ZM14 11h-2v8h2v-8Z"/></svg>
-
+                <div class="modal-info-wrapper modal-info-wrapper-window">
+                  <div class="modal-info">
+                    <p class="modal-info-text">
+                      Постараемся найти,<br> сколько нужно.<br> Привезём сколько<br> получится по требованиям<br> к провозу багажа
+                    </p>
+                  </div>
+                </div>
                     <button class="form-counter-minus-button" type="button">
                       <svg class="form-counter-minus-button-image" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><path fill="#000" d="M16 7H0v2h16V7Z"/></svg>
                     </button>
 
-                    <input class="form-counter-input form-counter-input-plus-minus" type="number" id=number" name="number">
+                    <input class="form-counter-input form-counter-input-plus-minus" type="number" id=number" name="number" placeholder="1">
 
                     <button class="form-counter-plus-button" type="button">
                       <svg class="form-counter-minus-button-image" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="16" height="16" viewBox="0 0 60.364 60.364"><path d="m54.454 23.18-18.609-.002-.001-17.268a5.91 5.91 0 1 0-11.819 0v17.269L5.91 23.178a5.91 5.91 0 0 0 0 11.819h18.115v19.457a5.91 5.91 0 0 0 11.82.002V34.997h18.611a5.908 5.908 0 0 0 5.908-5.907 5.906 5.906 0 0 0-5.91-5.91z"/></svg>

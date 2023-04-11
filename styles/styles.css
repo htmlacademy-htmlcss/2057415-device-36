@@ -2654,6 +2654,7 @@ body {
     top: 30px;
 }
 
+
 .basket__list {
     padding: 0;
     list-style-type: none;
@@ -2669,9 +2670,9 @@ body {
 }
 
 .open_basket-button {
-    padding: 0 20px;
+    /*padding: 0 20px;*/
     text-align: center;
-
+    background: #FFFFFF;
     width: 280px;
     height: 50px;
     margin: 0 auto;
@@ -2736,20 +2737,21 @@ basket__list {
 
     align-self: flex-start;
     justify-self: right;
-    width: 15px;
-    height: 15px;
+    width: 11px;
+    height: 11px;
     background-color: transparent;
     /*background-image: url(../images/cross.svg);*/
     padding: 0;
     box-sizing: border-box;
     cursor: pointer;
+    border: none;
 }
 
 .close_item__product {
     align-self: flex-start;
     justify-self: right;
-    width: 15px;
-    height: 15px;
+    width: 11px;
+    height: 11px;
     background-color: transparent;
     /*background-image: url(../images/cross.svg);*/
     padding: 0;
@@ -2757,6 +2759,7 @@ basket__list {
     cursor: pointer;
     margin-left: 49px;
     margin-top: 20px;
+    border: none;
 }
 
 .close_item_product:hover {
@@ -2787,6 +2790,7 @@ basket__list {
 
 
 .open_basket-button-block {
+
     height: 90px;
     display: flex;
     align-items: center;
@@ -2853,6 +2857,12 @@ basket__list {
     opacity: 0.3;
 }
 
+.open_basket-button:disabled {
+    color: #000000;
+    opacity: 0.3;
+}
+
+
 .basket__image:hover {
     opacity: 0.6;
 }
@@ -2877,9 +2887,19 @@ basket__list {
     opacity: 0.3;
 }
 
-.popover-window {
-    display: ;
+
+
+
+.popover-basket {
+    display: none;
 }
+
+.navigation-link:hover + .popover-basket,.popover-basket:hover {
+    display: block;
+}
+
+
+
 
 .modal-container {
     position: fixed;
@@ -2949,7 +2969,12 @@ basket__list {
     box-sizing: border-box;
     margin-top: 14px;
     border: none;
-
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    background: #F0F0F0;
 }
 
 .modal-name-wrapper {
@@ -2974,6 +2999,12 @@ basket__list {
     padding: 10px 55px 10px 20px;
     margin-top: 14px;
     border: none;
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    background: #F0F0F0;
 }
 
 .auth-form-name {
@@ -3006,6 +3037,7 @@ basket__list {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
+    color: #FF3D3D;
 }
 
 .form-add-name {
@@ -3069,6 +3101,7 @@ basket__list {
     padding: 10px 20px;
     box-sizing: border-box;
     margin-top: 14px;
+    background: #F0F0F0;
 }
 
 .form-counter {
@@ -3087,6 +3120,10 @@ basket__list {
     font-size: 16px;
     line-height: 20px;
     font-weight: 400;
+    border: none;
+    box-sizing: border-box;
+    margin-left: 2px;
+    text-align: center;
 }
 
 .form-counter-title {
@@ -3134,7 +3171,51 @@ basket__list {
     top: 0;
     right: 34px;
     background-repeat: no-repeat;
+    cursor: pointer;
 }
+
+.form-counter-image:hover .modal-info-wrapper {
+
+
+}
+
+.modal-info-wrapper {
+    position: absolute;
+
+    /*display: none;*/
+    top: 32px;
+
+}
+
+.modal-info-wrapper {
+    display: none;
+}
+
+
+
+
+
+
+
+.modal-info {
+    position: absolute;
+    width: 200px;
+    height: 160px;
+    background-color: #000000;
+}
+
+.modal-info-text {
+    width: 164px;
+    height: 141px;
+    color: #FFFFFF;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 19px 17px 0 19px;
+}
+
 
 .form-counter-minus-button {
     display: flex;
@@ -3145,6 +3226,7 @@ basket__list {
     cursor: pointer;
     width: 60px;
     height: 60px;
+    box-sizing: border-box;
 }
 
 .form-counter-minus {
@@ -3162,6 +3244,8 @@ basket__list {
     cursor: pointer;
     width: 60px;
     height: 60px;
+    box-sizing: border-box;
+    margin-left: 4px;
 }
 
 .form-counter-plus {
@@ -3265,6 +3349,10 @@ basket__list {
 
 .auth-form-input-email:invalid {
     outline: 2px solid #FF3D3D;
+}
+
+.auth-form-input-email:disabled {
+    opacity: 0.3;
 }
 
 .form-textarea-input:hover {
@@ -3398,6 +3486,22 @@ basket__list {
     height: 20px;
 }
 
-.modal-container {
-    display: ;
+.modal-info-wrapper {
+    display: none;
 }
+
+.form-counter-image:hover + .modal-info-wrapper,.modal-info-wrapper:hover {
+    display: block;
+}
+
+
+.modal-container {
+    display: none;
+}
+
+
+Открытие модального окна
+/*
+.modal-container {
+    display: none;
+}*/
