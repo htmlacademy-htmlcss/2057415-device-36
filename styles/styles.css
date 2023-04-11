@@ -2651,6 +2651,7 @@ body {
     background: #000000;
     z-index: 1;
     left: -120px;
+    top: 30px;
 }
 
 .basket__list {
@@ -2727,19 +2728,63 @@ basket__list {
 }
 
 .close_item_product {
-    margin-left: 54px;
+    margin-left: 87px;
+    margin-top: 20px;
 }
 
 .close_item_product {
-    display: flex;
-    width: 10px;
-    height: 10px;
-    background-image: url(../images/cross.svg);
+
+    align-self: flex-start;
+    justify-self: right;
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    /*background-image: url(../images/cross.svg);*/
+    padding: 0;
+    box-sizing: border-box;
+    cursor: pointer;
 }
 
-.popover-basket {
-
+.close_item__product {
+    align-self: flex-start;
+    justify-self: right;
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    /*background-image: url(../images/cross.svg);*/
+    padding: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-left: 49px;
+    margin-top: 20px;
 }
+
+.close_item_product:hover {
+    opacity: 0.6;
+}
+
+.close_item_product:focus {
+    outline: 2px solid #AF4FFF;
+}
+
+.close_item_product:active {
+    opacity: 0.3;
+}
+
+.close_item__product:hover {
+    opacity: 0.6;
+}
+
+.close_item__product:focus {
+    outline: 2px solid #AF4FFF;
+}
+
+.close_item__product:active {
+    opacity: 0.3;
+}
+
+
+
 
 .open_basket-button-block {
     height: 90px;
@@ -2757,6 +2802,7 @@ basket__list {
     position: relative;
 }
 
+/*
 .close_item_product::after {
     position: absolute;
     content: "";
@@ -2767,9 +2813,9 @@ basket__list {
     ursor: pointer;
     top: 31%;
     left: 90%;
-}
+} */
 
-.close_item_product::before {
+/*.close_item_product::before {
     position: absolute;
     content: "";
     width: 10px;
@@ -2779,15 +2825,21 @@ basket__list {
     cursor: pointer;
     top: 31%;
     left: 90%;
+}*/
+
+.close_item_product-image {
+    display: flex;
+    border: none;
+    width: 11px;
+    height: 11px;
 }
+
 
 .basket__image {
     padding-left: 20px;
 }
 
-.close_item_product {
-    margin-right: 20px;
-}
+
 
 .open_basket-button:hover {
     background: #FFE17F;
@@ -2900,6 +2952,11 @@ basket__list {
 
 }
 
+.modal-name-wrapper {
+    position: relative;
+}
+
+
 
 .auth-form-email {
     display: flex;
@@ -2974,7 +3031,7 @@ basket__list {
     height: 12px;
     fill: #B6B4B5;
     top: 58px;
-    left: 328px;
+    right: 24px;
     background-repeat: no-repeat;
 }
 
@@ -2986,7 +3043,7 @@ basket__list {
     height: 12px;
     fill: #B3B3B3;
     top: 58px;
-    right: 179px;
+    right: 24px;
     background-repeat: no-repeat;
 
 }
@@ -3074,8 +3131,8 @@ basket__list {
     position: absolute;
     width: 26px;
     height: 26px;
-    top: 3px;
-    right: 32px;
+    top: 0;
+    right: 34px;
     background-repeat: no-repeat;
 }
 
@@ -3242,14 +3299,42 @@ basket__list {
     outline: 2px solid #FF3D3D;
 }
 
+.form-counter-minus-button:hover {
+    opacity: 0.6;
+}
+
+.form-counter-minus-button:focus {
+    outline: 2px solid #AF4FFF;
+}
+
+.form-counter-minus-button:active {
+    opacity: 0.3;
+}
+
+.form-counter-plus-button:hover {
+    opacity: 0.6;
+}
+
+.form-counter-plus-button:focus {
+    outline: 2px solid #AF4FFF;
+}
+
+.form-counter-plus-button:active {
+    opacity: 0.3;
+}
+
+
+
+
+
 .auth-form {
     display: grid;
-    outline: 2px solid red;
+
     box-sizing: border-box;
     width: 760px;
     height: 332px;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 114px 94px 40px;
+    grid-template-columns: 360px 360px;
     row-gap: 24px;
     column-gap: 40px;
 }
@@ -3262,10 +3347,12 @@ basket__list {
 .modal-email-wrapper {
     width: 360px;
     height: 114px;
+    position: relative;
 }
 
 .modal-sum-wrapper {
     display: grid;
+
     grid-template-columns: 60px 60px 60px;
     grid-template-rows: 34px 60px;
 
@@ -3275,4 +3362,42 @@ basket__list {
 
 .form-counter-title {
     grid-column: 1/4;
+}
+
+.modal-textarea-wrapper {
+    grid-column: 540px;
+}
+
+.modal-sum-wrapper {
+    margin-left: 40px;
+    justify-self: end;
+    position: relative;
+}
+
+/*.auth-form-input-name {
+    outline: 2px solid red;
+}
+
+.auth-form-input-email {
+    outline: 2px solid red;
+}
+
+.form-counter-title {
+    outline: 2px solid red;
+}*/
+
+.auth-form-name {
+    width: 91px;
+    height: 20px;
+    display: flex;
+}
+
+.auth-form-email-title {
+    display: flex;
+    width: 108px;
+    height: 20px;
+}
+
+.modal-container {
+    display: ;
 }
