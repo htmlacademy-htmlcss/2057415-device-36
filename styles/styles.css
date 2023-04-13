@@ -35,7 +35,7 @@ body {
     line-height: 30px;
     color: #000000;
     background: #FFFFFF;
-
+    min-height: 3131;
 }
 
 .main-container {
@@ -113,6 +113,7 @@ body {
     border-radius: 50px 0px 0px 50px;
     background-color: transparent;
     height: 40px;
+    border-right: 1px solid #000000;
 }
 
 .header-search-site:focus {
@@ -136,7 +137,7 @@ body {
     /*line-height: 20px;*/
     width: 160px;
     height: 40px;
-
+    border-left: 1px solid #000000;
 }
 
 .header-navigation-user {
@@ -413,6 +414,7 @@ body {
     text-decoration: none;
     min-width: 180px;
     position: relative;
+    background: transparent;
 }
 
 
@@ -638,9 +640,11 @@ body {
     letter-spacing: 0.2em;
     text-transform: uppercase;
     margin-top: 30px;
+    background-color: transparent;
 }
 
-/*.security-button,.credit-button*/ .service-button {
+
+.service-button {
     color: #000000;
     font-family: "Raleway", sans-serif;
     font-size: 18px;
@@ -656,20 +660,35 @@ body {
     z-index: 0;
 }
 
+.security-button {
+    background-color: transparent;
+}
+
+.credit-button {
+    background-color: transparent;
+}
+
 .delivery-text-main {
     font-family: "Raleway", sans-serif;
+    font-weight: 800;
     font-size: 50px;
     line-height: 50px;
     color: #000000;
     margin-bottom: 34px;
+    max-width: 452px;
+    max-height: 100px;
 }
 
 .delivery-text {
+    display: block;
     font-family: "Rubik", sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
     color: #444444;
+    max-width: 452px;
+    max-height: 90px;
+    overflow: auto;
 }
 
 
@@ -697,14 +716,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #000000;
+    background: rgba(220, 220, 220, 0.5);
+    /*color: #000000;
     width: 40px;
     height: 40px;
-    /*background-image: url(../images/icon-information.svg);*/
+    /*background-image: url(../images/icon-information.svg);
 
     background-size: 2px 12px;
     background-color: #afafaf;
-    opacity: 0.3;
+    opacity: 0.3;*/
 
     /*color: #DCDCDC 50 %;*/
     /*background-color: rgba(220, 220, 220, 0.5);*/
@@ -719,20 +739,71 @@ body {
 
 }
 
-.title-info,.contacts-title {
+.contacts-title {
     font-family: "Raleway", sans-serif;
     font-size: 50px;
     line-height: 50px;
     color: #000000;
+    margin-top: 47px;
+    margin-bottom: 48px;
 }
 
-.text-info,.reclame-info,.contacts-text,.device-adress,.working-time {
+.title-info {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 50px;
+    color: #000000;
+    max-width: 500px;
+    max-height: 97px;
+    margin-top: 47px;
+    margin-bottom: 48px;
+}
+
+.device-adress,.working-time {
     font-family: "Rubik", sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
     color: #444444;
 }
+
+.contacts-text {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #444444;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+.text-info {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #444444;
+    max-width: 497px;
+    max-height: 60px;
+    overflow: auto;
+}
+
+.reclame-info {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #444444;
+    max-width: 497px;
+    max-height: 60px;
+    overflow: auto;
+}
+
 
 .button-info {
     font-family: "Raleway", sans-serif;
@@ -747,7 +818,8 @@ body {
     min-width: 257px;
     display: inline-block;
     padding: 10px 6px;
-    }
+    background-color: transparent;
+}
 
 
 .working-hours,.e-commerce-device {
@@ -768,15 +840,9 @@ body {
     color: #000000;
 }
 
-.mailing-list {
-    font-family: "Raleway";
-    font-size: 50px;
-    line-height: 50px;
-    color: #000000;
-}
 
-.mailing-list-text,.free-item {
-    font-family: "Rubik";
+.free-item {
+    font-family: "Rubik", sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
@@ -793,7 +859,7 @@ body {
     display: flex;
     justify-content: flex-end;
     position: relative;
-    z-index: -1;
+
 
 }
 
@@ -866,6 +932,16 @@ body {
 
 }
 
+.categories-img-work {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+}
+
+
 .menu-categories-link:hover .categories-tech-image-wrapper {
     background-color: #FFC700;
 }
@@ -883,8 +959,9 @@ body {
 
 
 .menu-categories-popular {
-    width: 160px;
-    height: 253px;
+    max-width: 160px;
+    max-height: 253px;
+    overflow: auto;
 }
 
 
@@ -953,10 +1030,6 @@ body {
 
 
 
-.delivery-text {
-    display: block;
-}
-
 .image-postman-block {
     align-items: center;
     padding-top: 30px;
@@ -997,21 +1070,28 @@ body {
     background-color: #FFC700;
 }
 
+.link-wrapper:hover .icon-information {
+    color: #FFFFFF;
+
+}
+
 .link-wrapper:focus {
-    /*border: 2px solid #AF4FFF;*/
+
     outline: 2px solid #AF4FFF;
 }
 
 .link-wrapper:active {
-    background: #F0F0F0;
+
     opacity: 0.3;
 }
 
-.link-wrapper:hover .icon-information {
-    opacity: 1;
-    background-color: #e9e9e9;
+.delivery-new-text-block {
+    background: #F0F0F0;
 }
 
+.icon-information-block {
+    background: #F0F0F0;
+}
 
 .delivery-new-text {
     font-family: "Raleway", sans-serif;
@@ -1061,42 +1141,99 @@ body {
 
 }
 
-.working-time,.working-hours,.device-adress,.e-commerce-device,.reclame-info {
+.e-commerce-device,.reclame-info {
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+.device-adress {
     margin-bottom: 30px;
-    margin-top: 30px;
+    margin-top: 0;
+}
+
+.working-hours {
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+.working-time {
+    margin-bottom: 30x;
+    margin-top: 0;
 }
 
 /* Секция подпишитесь на рассылку*/
 
+
+.page-mailing-list {
+    background: #F0F0F0;
+}
+
 .page-mailing-wrapper {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 100px 57px;
+
+    row-gap: 144px;
+
+
+    /*flex-direction: column;
     justify-content: center;
-    align-items: center;
-    width: 1140px;
-    height: 421px;
-    margin: 0 auto;
+    align-items: center;*/
+    width: 100%;
+    min-height: 421px;
+    margin: 0;
+}
+
+.newsletter-form-block {
+
 }
 
 .page-mailing-block {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 600px 560px;
     align-items: center;
-    padding-bottom: 70px;
-    margin-bottom: 20px;
+    /*display: flex;
+    justify-content: space-between;
+    align-items: center;*/
+    /*padding-bottom: 70px;
+    margin-bottom: 20px;*/
+    background: #F0F0F0;
 
 }
 
 .mailing-list {
-    width: 348px;
-    height: 100px;
+    font-family: "Raleway", sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 50px;
+    color: #000000;
+    max-width: 378px;
+    max-height: 300px;
+
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    vertical-align: center;
+    margin: 0;
+    padding: 0;
+
 
 }
 
 .mailing-list-text {
-    width: 560px;
-    height: 90px;
-    padding-left: 252px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #444444;
+    max-width: 560px;
+    max-height: 90px;
+
+    overflow: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+
 }
 
 .newsletter-form-block {
@@ -1110,6 +1247,7 @@ body {
 
 .newsletter-form {
     display: flex;
+    background: #F0F0F0;
 }
 
 .newsletter-button {
@@ -1118,6 +1256,7 @@ body {
     border: 3px solid #C4C4C4;
     padding-left: 0;
     cursor: pointer;
+    background-color: transparent;
 }
 
 .field {
@@ -1187,7 +1326,22 @@ body {
     display: flex;
     justify-content: space-around;
     width: 444px;
+    font-family: "Raleway";
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    list-style-type: none;
+    padding-left: 0;
 }
+
+.footer-list-item {
+    padding-left: 35px;
+
+}
+
+
 
 /* Нижний блок */
 
@@ -1215,7 +1369,6 @@ body {
 }
 
 .footer-social-media-link {
-
     width: 40px;
     height: 40px;
 }
@@ -1232,14 +1385,6 @@ body {
     list-style-type: none;
 }
 
-.footer-list {
-    font-family: "Raleway";
-    font-size: 18px;
-    line-height: 21px;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: #FFFFFF;
-}
 
 .footer-list-link {
     text-decoration: none;
@@ -1266,9 +1411,6 @@ body {
     color: #FFFFFF;
 }
 
-.footer-list {
-    list-style-type: none;
-}
 
 .footer-social-media-list {
     list-style-type: none;
@@ -1563,10 +1705,90 @@ body {
 .product-card {
     display: grid;
     grid-template-rows: 380px min-content;
-    row-gap: 70px;
+    row-gap: 32px;
     width: 360px;
-    /*height: 452px;*/
+    height: 452px;
+    position: relative;
 }
+                                /*Попап карточки продукта*/
+.card-product-popap {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 360px;
+    height: 380px;
+
+    background: rgba(240, 240, 240, 0.8);
+}
+
+.card-product-popap-link {
+    display: inline-block;
+    position: absolute;
+    top: 140px;
+    left: 70px;
+    padding: 11px 40px;
+    max-width: 220px;
+    max-height: 40px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    z-index: 0;
+    background-color: transparent;
+    text-decoration: none;
+    color: #000000;
+
+}
+
+
+
+.card-product-popap-link::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #FFE17F;
+    z-index: -1;
+    height: 8px;
+    width: 100%;
+}
+
+.product-card:hover .card-product-popap{
+    visibility: visible;
+}
+
+
+.product-card:focus .product-card{
+   outline: 2px solid #AF4FFF;
+}
+
+.product-card:active .card-product-popap-link::before {
+    background: #FFC700;
+}
+
+.product-card:active .product-card-title-item-link {
+    opacity: 0.3;
+}
+
+.product-card:hover .product-card-title-block {
+    opacity: 0.6;
+}
+
+.product-card:active .product-card-title-price {
+    opacity: 0.3;
+}
+
+
+
 
 .product-card-image {
     width: 360px;
@@ -1614,8 +1836,8 @@ body {
 }
 
 .sort-direction-link:focus {
-    border: 2px solid #AF4FFF;
-    outline: none;
+    outline: 2px solid #AF4FFF;
+
 }
 
 .sort-direction-link:active {
@@ -1726,6 +1948,8 @@ body {
     text-decoration: none;
     list-style-type: none;
     margin: 0;
+    max-width: 270px;
+    overflow: auto;
     /*padding-top: 30px;*/
 }
 
@@ -1998,6 +2222,7 @@ body {
     cursor: pointer;
     position: relative;
     z-index: 0;
+    background-color: transparent;
 }
 
 .filter-button::before {
@@ -2107,7 +2332,7 @@ body {
 
 .navigation-link:focus {
     /*border: 3px solid #C4C4C4;*/
-    outline: 3px solid #C4C4C4;
+    outline: 2px solid #AF4FFF;
 }
 
 .navigation-link:active {
@@ -2137,13 +2362,13 @@ body {
 
 .header-search-button:hover {
     background: #000000;
-    border: 3px solid #000000;
+
     color: #FFFFFF;
 }
 
 .header-search-button:focus {
-    border: 3px solid #C4C4C4;
-    outline: none;
+    outline: 2px solid #AF4FFF;;
+
 }
 
 .header-search-button:active {
@@ -2335,15 +2560,21 @@ body {
 
 .social-media-link {
     display: flex;
+    width: 40px;
+    height: 40px;
 }
 
 .telegram-image-logo {
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.3);
 }
 
 
 .twitter-image-logo {
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.3);
 
@@ -2358,6 +2589,8 @@ body {
 }
 
 .youtube-image-logo {
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.3);
 
@@ -2398,7 +2631,7 @@ body {
 }
 
 .catalog-link:focus {
-    /*border: 2px solid #AF4FFF;*/
+
     outline: 2px solid #AF4FFF;
 }
 
@@ -2410,8 +2643,8 @@ body {
     opacity: 0.6;
 }
 
+
 .product-card-image-link:focus {
-    /*border: 2px solid #AF4FFF;*/
     outline: 2px solid #AF4FFF;
 }
 
@@ -2426,8 +2659,9 @@ body {
     opacity: 0.6;
 }
 
+
 .product-card-title-item-link:focus {
-    /*border: 2px solid #AF4FFF;*/
+
     outline: 2px solid #AF4FFF;
 }
 
@@ -3131,6 +3365,16 @@ basket__list {
     width: 146px;
     height: 20px;
     font-size: 18px;
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+
+/* basic/black */
+
+color: #000000;
 }
 
 .form-textarea-title {
@@ -3138,6 +3382,13 @@ basket__list {
     width: 200px;
     height: 20px;
     font-size: 18px;
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+
 }
 
 .form-counter-minus {
@@ -3168,7 +3419,7 @@ basket__list {
     position: absolute;
     width: 26px;
     height: 26px;
-    top: 0;
+    top: -3px;
     right: 34px;
     background-repeat: no-repeat;
     cursor: pointer;
@@ -3208,7 +3459,7 @@ basket__list {
     width: 164px;
     height: 141px;
     color: #FFFFFF;
-    font-family: "Rubik";
+    font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -3453,7 +3704,8 @@ basket__list {
 }
 
 .modal-textarea-wrapper {
-    grid-column: 540px;
+
+    grid-column: 1/2;
 }
 
 .modal-sum-wrapper {
@@ -3462,17 +3714,6 @@ basket__list {
     position: relative;
 }
 
-/*.auth-form-input-name {
-    outline: 2px solid red;
-}
-
-.auth-form-input-email {
-    outline: 2px solid red;
-}
-
-.form-counter-title {
-    outline: 2px solid red;
-}*/
 
 .auth-form-name {
     width: 91px;
@@ -3494,14 +3735,11 @@ basket__list {
     display: block;
 }
 
-
 .modal-container {
     display: none;
-}
-
 
 Открытие модального окна
 /*
 .modal-container {
-    display: none;
+    display: block;
 }*/
