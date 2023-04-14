@@ -534,6 +534,7 @@ body {
     font-size: 16px;
     line-height: 30px;
     color: #444444;
+    margin-left: 0;
 }
 
 .navigation-link {
@@ -1028,6 +1029,7 @@ body {
     width: 1160px;
     height: 100px;
     margin: 0 auto;
+    background-color: #F0F0F0;
     /*padding-top: 30px;*/
 }
 
@@ -1068,7 +1070,7 @@ body {
 }
 
 .delivery-new-text-block {
-    background: #F0F0F0;
+    background: transparent;
 }
 
 .icon-information-block {
@@ -1085,6 +1087,7 @@ body {
     list-style-type: none;
     color: #000000;
     text-transform: uppercase;
+    background-color: transparent;
 }
 
 
@@ -1198,7 +1201,6 @@ body {
     max-width: 560px;
     max-height: 90px;
 
-    overflow: auto;
     margin-top: 0;
     margin-bottom: 0;
 
@@ -1242,8 +1244,8 @@ body {
 }
 
 .field:focus {
-    outline: none;
-    background-color: #DCDCDC;
+    outline: 2px solid #AF4FFF;
+    /*background-color: #DCDCDC;*/
 }
 
 
@@ -1292,8 +1294,8 @@ body {
 
 .footer-list {
     display: flex;
-    justify-content: space-around;
-    width: 444px;
+    flex-wrap: wrap;
+    width: 454px;
     font-family: "Raleway", sans-serif;
     font-size: 18px;
     line-height: 21px;
@@ -1304,9 +1306,8 @@ body {
     padding-left: 0;
 }
 
-.footer-list-item {
-    padding-left: 35px;
-
+.footer-list-item:not(:first-child) {
+    margin-left: 35px;
 }
 
 
@@ -1328,7 +1329,8 @@ body {
 
 .footer-social-media-list {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
     align-items: center;
     width: 150px;
     padding-left: 0;
@@ -1441,6 +1443,7 @@ body {
 
 .main-title-list {
     display: flex;
+    flex-wrap: wrap;
     margin: 0;
     max-width: 429px;
     padding: 0;
@@ -1522,6 +1525,7 @@ body {
     line-height: 30px;
     border: none;
     width: 141px;
+    background: transparent;
 }
 
 .select-control:hover {
@@ -1758,6 +1762,14 @@ body {
 .product-card:focus .product-card{
    outline: 2px solid #AF4FFF;
 }
+
+.card-product-popap-link:hover {
+
+    background: #FFC700;
+}
+
+
+
 
 .product-card:active .card-product-popap-link::before {
     background: #FFC700;
@@ -2834,6 +2846,16 @@ body {
     top: 30px;
 }
 
+.popover-window::before {
+    content: '';
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+    background-color: transparent;
+}
+
 
 .basket__list {
     padding: 0;
@@ -3063,6 +3085,7 @@ basket__list {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
+    z-index: 10;
 }
 
 .modal {
@@ -3249,6 +3272,11 @@ basket__list {
 }
 
 .form-textarea-input {
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
     width: 540px;
     height: 60px;
     border: none;
@@ -3278,6 +3306,7 @@ basket__list {
     box-sizing: border-box;
     margin-left: 2px;
     text-align: center;
+    background-color: #F0F0F0;
 }
 
 .form-counter-title {
@@ -3490,6 +3519,7 @@ color: #000000;
     background: #FFCC33;
 }
 
+
 .auth-form-input-name:hover {
     background: #DCDCDC;
 }
@@ -3542,9 +3572,9 @@ color: #000000;
     outline: 2px solid #FF3D3D;
 }
 
-.form-counter-input:hover {
+/*.form-counter-input:hover {
     background: #DCDCDC;
-}
+}*/
 
 .form-counter-input:focus {
     outline: 2px solid #AF4FFF;

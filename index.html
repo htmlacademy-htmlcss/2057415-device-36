@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="images/favicon.ico">
+    <link rel="icon" href="images/favicon.png">
   </head>
   <body>
     <header class="page-header">
@@ -45,6 +45,7 @@
                         Корзина
                     </a>
                     <div class="popover-basket popover-window">
+                      <h3 class="visually-hidden">tooltip recycle bin</h3>
                       <button class="visually-hidden popover-button popover_button">
                         <span class="visually-hidden">Закрыть корзину.</span>
                       </button>
@@ -53,7 +54,7 @@
                           <img class="basket__image" src="images/product-1-small.png" width="39" height="43" alt="Любительская селфи-палка.">
                           <p class="cart__item__title">Любительская<br> селфи-палка</p>
                           <button class="close_item_product">
-                            <svg class="close_item_product-image" xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="none"><g clip-path="url(#a)"><path fill="#fff" d="m11 1-1-1-4.5 4.5L1 0 0 1l4.5 4.5L0 10l1 1 4.5-4.5L10 11l1-1-4.5-4.5L11 1Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h11v11H0z"/></clipPath></defs></svg>
+                            <svg class="close_item_product-image" xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="none"><g clip-path="url(#a)"><path fill="#fff" d="m11 1-1-1-4.5 4.5L1 0 0 1l4.5 4.5L0 10l1 1 4.5-4.5L10 11l1-1-4.5-4.5L11 1Z"/></g><defs><clipPath id="a1300"><path fill="#fff" d="M0 0h11v11H0z"/></clipPath></defs></svg>
                             <span class="visually-hidden">Закрыть.</span>
                           </button>
                         </li>
@@ -97,7 +98,7 @@
                 <li class="navigation-item navigation-item-user-catalog">
                   <a class="navigation-link-add-catalog navigation-link-add-plus" href="catalog.html">
                     Каталог товаров
-                    <svg class="symbol-plus" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="none" viewBox="0 0 50 50"><circle cx="25" cy="25" r="24" stroke="#000" stroke-width="2" opacity=".3"/><g clip-path="url(#a)" opacity=".3"><path fill="#000" d="M33 24h-7v-7h-2v7h-7v2h7v7h2v-7h7v-2Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M17 17h16v16H17z"/></clipPath></defs></svg>
+                    <svg class="symbol-plus" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="none" viewBox="0 0 50 50"><circle cx="25" cy="25" r="24" stroke="#000" stroke-width="2" opacity=".3"/><g clip-path="url(#a)" opacity=".3"><path fill="#000" d="M33 24h-7v-7h-2v7h-7v2h7v7h2v-7h7v-2Z"/></g><defs><clipPath id="a1301"><path fill="#fff" d="M17 17h16v16H17z"/></clipPath></defs></svg>
                   </a>
                   <div class="popover popover-add-catalog">
                     <h2 class="visually-hidden">Категории каталога.</h2>
@@ -194,24 +195,24 @@
                         </p>
                         <a class="navigation-link-slide" href="#">Подробнее</a>
 
-                        <dl class="data-information data-text-information">
-                          <div class="important-information-block">
-                            <dd class="important-information">
+                        <div class="data-information data-text-information">
+                          <dl class="important-information-block">
+                            <dt class="important-information">
                             800&nbsp;М
-                            </dd>
-                            <dt class="important-information-add">
+                            </dt>
+                            <dd class="important-information-add">
                               Дальность полёта
-                            </dt>
-                          </div>
-                          <div class="important-information-block">
-                            <dd class="important-information">
-                              50&nbsp;М
                             </dd>
-                            <dt class="important-information-add">
-                              Радиус поражения
+                          </dl>
+                          <dl class="important-information-block">
+                            <dt class="important-information">
+                              50&nbsp;М
                             </dt>
-                          </div>
-                        </dl>
+                            <dd class="important-information-add">
+                              Радиус поражения
+                            </dd>
+                          </dl>
+                        </div>
                       </div>
                   </li>
 
@@ -540,21 +541,22 @@
           <img class="footer-line" src="images/footer-line.svg" width="80" height="7" alt="Декоративная черточка.">
             <ul class="footer-social-media-list">
               <li class="footer-social-media-link">
-                <a class="social-media-link-telegram social-media-link" href="#telegram">
+                <a class="social-media-link-telegram social-media-link" href="https://web.telegram.org/">
                   <img class="telegram-image-logo" src="images/telegram.svg" width="40" height="40" alt="Мы в телеграме.">
                 </a>
               </li>
               <li class="footer-social-media-link">
-                <a class="social-media-link-youtube social-media-link" href="#youtube">
+                <a class="social-media-link-youtube social-media-link" href="https://www.youtube.com/">
                   <img class="youtube-image-logo" src="images/youtube.svg" width="40" height="40" alt="Мы в ютубе.">
-                                                  </a>
+                </a>
               </li>
               <li class="footer-social-media-link">
-                <a class="social-media-link-twitter social-media-link" href="#twitter">
+                <a class="social-media-link-twitter social-media-link" href="https://twitter.com/">
                   <img class="twitter-image-logo" src="images/twitter.svg" width="40" height="40" alt="Мы в твиттере.">
                 </a>
               </li>
             </ul>
+              <h3 class="visually-hidden">HTML-academy.</h3>
               <a class="footer-copyright-link" href="https://htmlacademy.ru/">
                 <svg class="logo-html-academy" xmlns="http://www.w3.org/2000/svg" width="115" height="33" fill="none" viewBox="0 0 115 33"><path d="M0 12.9v2.6h2.5v-2.6H0ZM11.6 4.5c-1.6 0-2.8.7-3.6 1.7h-.1V0h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2V9.4c.1-3-1.8-4.9-4.5-4.9ZM26.6 4.8h-4.8V1.1h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1V6.8h4.8v-2ZM41.1 4.6c-1.6 0-2.9.8-3.5 2.1h-.1c-.6-1.2-1.8-2.1-3.4-2.1-1.4 0-2.5.8-3.1 1.8h-.1V4.8H29v10.6h2V10c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2V9.8c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2V8.9c.1-2.5-1.4-4.3-3.9-4.3ZM47.8 12.7c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V0h-2v12.7ZM28.9 19.7c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6ZM44.2 22c-.5-2.4-2.6-4.1-5.4-4.1-3.4 0-5.6 2.5-5.6 5.6 0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1c-.4 1.3-1.7 2.3-3.3 2.3-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6c1.6 0 2.8 1 3.3 2.2h2.1V22ZM55.1 19.7c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.5 3.6-3.6 3.6ZM68.7 19.8c-.9-1.1-2.2-1.9-3.9-1.9-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2V13.4h-2v6.4Zm-3.6 7.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6ZM78.3 17.9c-3.3 0-5.5 2.5-5.5 5.6 0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3Zm0 1.9c1.7 0 3 1 3.3 2.6h-6.5c.3-1.5 1.5-2.6 3.2-2.6ZM98.2 17.9c-1.6 0-2.9.8-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4ZM109.4 27l-3.6-8.9h-2.2l4.8 11.6c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9Z"/></svg>
               </a>
@@ -610,13 +612,13 @@
                     </p>
                   </div>
                 </div>
-                    <button class="form-counter-minus-button" type="button">
+                    <button class="form-counter-minus-button" type="button" aria-labelledby="controller to decrease.">
                       <svg class="form-counter-minus-button-image" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><path fill="#000" d="M16 7H0v2h16V7Z"/></svg>
                     </button>
 
                     <input class="form-counter-input form-counter-input-plus-minus" type="number" id="number" name="number" aria-label="Поле количество." placeholder="1">
 
-                    <button class="form-counter-plus-button" type="button">
+                    <button class="form-counter-plus-button" type="button" aria-labelledby="zoom controller.">
                       <svg class="form-counter-minus-button-image" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="16" height="16" viewBox="0 0 60.364 60.364"><path d="m54.454 23.18-18.609-.002-.001-17.268a5.91 5.91 0 1 0-11.819 0v17.269L5.91 23.178a5.91 5.91 0 0 0 0 11.819h18.115v19.457a5.91 5.91 0 0 0 11.82.002V34.997h18.611a5.908 5.908 0 0 0 5.908-5.907 5.906 5.906 0 0 0-5.91-5.91z"/></svg>
                     </button>
           </div>
