@@ -266,12 +266,9 @@ body {
 /* Отсюда слайдер*/
 
 .content-wrapper-slide {
-    display: flex;
-    justify-content: space-between;
     margin: 0 auto;
     width: 1160px;
-    padding-left: 5px;
-    padding-right: 5px;
+
 }
 
 .slider-pagination {
@@ -439,14 +436,18 @@ body {
 
 .main-page-slider {
     margin-bottom: 30px;
-
-
 }
 
 .electronics-gallery {
+
+}
+
+.content-wrapper-slide {
     position: relative;
     background-image: linear-gradient(-180deg, #FFE17F 85px, #fff 84px);
 }
+
+
 
 .slider-pagination-helicopter {
     position: relative;
@@ -465,6 +466,7 @@ body {
 }
 
 .point-conrol-button {
+    position: relative;
     width: 12px;
     height: 12px;
     padding: 0;
@@ -474,6 +476,18 @@ body {
     outline: 0;
     cursor: pointer;
 }
+
+.point-conrol--button::before {
+    position: absolute;
+    content: "";
+    z-index: 1;
+    width: 12px;
+    height: 12px;
+    background-image: url(../images/indicators.svg);
+    top: -1px;
+    right: -1px;
+}
+
 
 .point-conrol-button:hover {
     opacity: 0.6;
@@ -688,9 +702,8 @@ body {
     font-size: 18px;
     line-height: 30px;
     color: #444444;
-    max-width: 452px;
-    max-height: 90px;
-    overflow: auto;
+    max-width: 453px;
+
 }
 
 
@@ -893,7 +906,8 @@ body {
 
 .categories-tech {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
     align-items: center;
     list-style-type: none;
     margin: 0 auto;
@@ -985,7 +999,7 @@ body {
 .delivery-list {
     list-style-type: none;
     max-width: 880px;
-    height: 319px;
+
     margin: 0;
     padding-left: 76px;
 }
@@ -1105,13 +1119,13 @@ body {
 
 .main-info-block {
     width: 520px;
-    height: 545px;
+    min-height: 545px;
 
 }
 
 .contacts {
     width: 532px;
-    height: 545px;
+    min-height: 545px;
 }
 
 .company-delivery-list {
@@ -1120,11 +1134,23 @@ body {
     justify-content: space-between;
     width: 182px;
     height: 98px;
-    padding-left: 7px;
+    padding-left: 38px;
     margin-bottom: 30px;
     margin-top: 30px;
-
+    list-style: none;
+    position: relative;
 }
+
+.company-list-item::before {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-image: url(../images/ellipse-delivery.svg);
+    top: 7px;
+    left: 0;
+}
+
 
 .e-commerce-device,.reclame-info {
     margin-bottom: 15px;
@@ -1155,11 +1181,11 @@ body {
 
 .page-mailing-wrapper {
     display: grid;
-    grid-template-rows: 100px 57px;
+    grid-template-rows: max-content 57px;
     row-gap: 144px;
-    width: 100%;
+    width: 1160px;
     min-height: 421px;
-    margin: 0;
+    margin: 0 auto;
 }
 
 
@@ -1199,7 +1225,7 @@ body {
     line-height: 30px;
     color: #444444;
     max-width: 560px;
-    max-height: 90px;
+
 
     margin-top: 0;
     margin-bottom: 0;
@@ -1510,7 +1536,15 @@ body {
 }
 
 
-.control {
+.radio-control {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.check-control {
     font-family: "Rubik", sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -1686,6 +1720,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
     row-gap: 44px;
     column-gap: 40px;
+    align-items: start;
     padding: 0;
     margin: 0;
     padding-bottom: 44px;
@@ -1699,7 +1734,7 @@ body {
     grid-template-rows: 380px min-content;
     row-gap: 32px;
     width: 360px;
-    height: 452px;
+
     position: relative;
 }
                                 /*Попап карточки продукта*/
@@ -1933,7 +1968,7 @@ body {
     list-style-type: none;
     margin: 0;
     max-width: 270px;
-    overflow: auto;
+
 }
 
 .product-card-link {
@@ -2773,10 +2808,10 @@ body {
     padding-left: 0;
     row-gap: 16px;
 }
-
-.control:hover {
+/*
+.radio-control:hover {
     opacity: 0.6;
-}
+} */
 
 .control:focus {
     outline: 2px solid #AF4FFF;
@@ -2785,9 +2820,15 @@ body {
 .control:active {
     opacity: 0.3;
 }
-.control:active .control-input{
-    opacity: 0;
+
+.radio-conrol:active {
+    opacity: 0.3;
 }
+
+
+
+
+
 
 .button-btn:hover {
     opacity: 0.5;
@@ -2805,6 +2846,123 @@ body {
 .filter-input--catalog:focus {
     outline: 2px solid #AF4FFF;
 }
+
+
+/*Стилизация радио-кнопок*/
+
+.radio-control-input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.radio-control {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+.radio-control::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 2px solid #CCCCCC;
+    border-radius: 50%;
+    margin-right: 16px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+.radio-control-input:checked+label::before {
+    border-color: #000000;
+    background-color: #ffffff;
+    background-image: url(../images/ellipseforradio.svg);
+}
+
+.radio-control-input:not(:disabled)+label:hover::before {
+    opacity: 0.6;
+  }
+
+.radio-control-input:not(:disabled):active+label::before {
+    opacity: 0;
+}
+
+.radio-control-input:focus+label::before {
+    outline: 2px solid #AF4FFF;
+}
+
+.radio-control-input:focus:not(:checked)+label::before {
+    outline: 2px solid #AF4FFF;
+}
+
+.radio-control-input:disabled+label::before {
+    opacity: 0.1;
+}
+
+
+/*Стилизация чек-боксов*/
+
+.check-control-input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.check-control {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+.check-control::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 2px solid #CCCCCC;
+    border-radius: 3px;
+    margin-right: 16px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+.check-control-input:checked+label::before {
+    border-color: #000000;
+    background-color: #ffffff;
+    background-image: url(../images/tick-check-box.svg);
+}
+
+.check-control-input:not(:disabled)+label:hover::before {
+    opacity: 0.6;
+  }
+
+.check-control-input:not(:disabled):active+label::before {
+    opacity: 0;
+}
+
+.check-control-input:focus+label::before {
+    outline: 2px solid #AF4FFF;
+}
+
+.check-control-input:focus:not(:checked)+label::before {
+    outline: 2px solid #AF4FFF;
+}
+
+.check-control-input:disabled+label::before {
+    opacity: 0.1;
+}
+
+
+
+
+
 
 .popover {
     position: absolute;
