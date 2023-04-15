@@ -676,6 +676,8 @@ body {
     z-index: 0;
 }
 
+
+
 .security-button {
     background-color: transparent;
 }
@@ -1138,6 +1140,9 @@ body {
     margin-bottom: 30px;
     margin-top: 30px;
     list-style: none;
+}
+
+.company-list-item {
     position: relative;
 }
 
@@ -1147,8 +1152,8 @@ body {
     width: 8px;
     height: 8px;
     background-image: url(../images/ellipse-delivery.svg);
-    top: 7px;
-    left: 0;
+    top: 5px;
+    left: -38px;
 }
 
 
@@ -1799,12 +1804,12 @@ body {
 }
 
 .card-product-popap-link:hover {
-
-    background: #FFC700;
+    background: #FFE17F;
 }
 
-
-
+.card-product-popap-link:active {
+    background: #FFCC33;
+}
 
 .product-card:active .card-product-popap-link::before {
     background: #FFC700;
@@ -2939,13 +2944,14 @@ body {
     background-image: url(../images/tick-check-box.svg);
 }
 
-.check-control-input:not(:disabled)+label:hover::before {
+.check-control-input:not(:disabled)+label:hover {
     opacity: 0.6;
-  }
-
-.check-control-input:not(:disabled):active+label::before {
-    opacity: 0;
 }
+
+.check-control-input:not(:disabled)+label:active {
+    opacity: 0.3;
+}
+
 
 .check-control-input:focus+label::before {
     outline: 2px solid #AF4FFF;
@@ -3462,7 +3468,7 @@ basket__list {
     font-weight: 400;
     border: none;
     box-sizing: border-box;
-    margin-left: 2px;
+
     text-align: center;
     background-color: #F0F0F0;
 }
@@ -3603,7 +3609,7 @@ color: #000000;
     width: 60px;
     height: 60px;
     box-sizing: border-box;
-    margin-left: 4px;
+
 }
 
 .form-counter-plus {
@@ -3677,6 +3683,10 @@ color: #000000;
     background: #FFCC33;
 }
 
+.modal-submit:active::before {
+    background: #FFCC33;
+}
+
 
 .auth-form-input-name:hover {
     background: #DCDCDC;
@@ -3735,8 +3745,10 @@ color: #000000;
 }*/
 
 .form-counter-input:focus {
-    outline: 2px solid #AF4FFF;
+    outline: none;
+    box-shadow: inset 0 0 0 1px #AF4FFF;
 }
+
 
 .form-counter-input:active {
 
@@ -3751,7 +3763,8 @@ color: #000000;
 }
 
 .form-counter-minus-button:focus {
-    outline: 2px solid #AF4FFF;
+    outline: none;
+    box-shadow: inset 0 0 0 1px #AF4FFF;
 }
 
 .form-counter-minus-button:active {
@@ -3845,6 +3858,7 @@ color: #000000;
 
 .modal-container {
     display: none;
+}
 
 
 /*Открытие модального окна
