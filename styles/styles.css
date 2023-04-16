@@ -974,6 +974,7 @@ body {
 /*Delivery section*/
 
 .delivery-main {
+    position: relative;
     margin-bottom: 90px;
 }
 
@@ -1291,6 +1292,7 @@ body {
     color: #444444;
     padding: 0 20px;
     box-sizing: border-box;
+    background: #F0F0F0;
 
 }
 
@@ -2007,7 +2009,20 @@ body {
 .product-card-image-wrapper {
     width: 360px;
     height: 380px;
+    position: relative;
 }
+
+.product-card-image-wrapper-new::after {
+    position: absolute;
+    content: "";
+    background-image: url(../images/icon-new.svg);
+    width: 60px;
+    height: 60px;
+    top: 27px;
+    right: 27px;
+}
+
+
 
 .product-card-title-price {
 
@@ -2910,14 +2925,14 @@ body {
     background-color: #ffffff;
     background-image: url(../images/ellipseforradio.svg);
 }
-
+/*
 .radio-control-input:not(:disabled)+label:hover::before {
     opacity: 0.6;
   }
 
 .radio-control-input:not(:disabled):active+label::before {
     opacity: 0;
-}
+}  */
 
 .radio-control-input:focus+label::before {
     outline: 2px solid #AF4FFF;
@@ -2930,6 +2945,19 @@ body {
 .radio-control-input:disabled+label::before {
     opacity: 0.1;
 }
+
+.radio-control-input:not(:disabled)+label:hover {
+    opacity: 0.6;
+}
+
+.radio-control-input:not(:disabled)+label:active {
+    opacity: 0.3;
+}
+
+
+
+
+
 
 
 /*Стилизация чек-боксов*/
@@ -2967,6 +2995,8 @@ body {
     background-image: url(../images/tick-check-box.svg);
 }
 
+
+
 .check-control-input:not(:disabled)+label:hover {
     opacity: 0.6;
 }
@@ -2974,6 +3004,7 @@ body {
 .check-control-input:not(:disabled)+label:active {
     opacity: 0.3;
 }
+
 
 
 .check-control-input:focus+label::before {
