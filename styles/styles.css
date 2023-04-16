@@ -58,7 +58,7 @@ body {
 
 .content-wrapper {
     box-sizing: border-box;
-    width: 1200px;
+    width: 1160px;
     margin: 0 auto;
     padding-left: 20px;
     padding-right: 20px;
@@ -252,7 +252,7 @@ body {
 /* Вторая навигация */
 
 .navigation-item-basket {
-    margin-left: 20px;
+    margin-left: 12px;
 }
 
 
@@ -267,7 +267,7 @@ body {
 
 .content-wrapper-slide {
     margin: 0 auto;
-    width: 1160px;
+    width: 1120px;
 
 }
 
@@ -977,12 +977,24 @@ body {
     margin-bottom: 90px;
 }
 
+.delivery-main::before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: '';
+    width: 100%;
+    height: calc(100% - 102px);
+    background-color: #F0F0F0;
+    z-index: -1;
+}
+
+
 .delivery-main-wrapper {
     display: flex;
 
-    align-items: center;
+    align-items: self-start;
     width: 1160px;
-    height: 319px;
+    min-height: 319px;
     box-sizing: border-box;
     margin: 0 auto;
     box-sizing: border-box;
@@ -1072,7 +1084,10 @@ body {
 
 .link-wrapper:hover .icon-information {
     color: #FFFFFF;
+}
 
+.link-wrapper:hover .my-icon {
+    opacity: 1;
 }
 
 .link-wrapper:focus {
@@ -1092,6 +1107,11 @@ body {
 .icon-information-block {
     background: #F0F0F0;
 }
+
+.my-icon {
+
+}
+
 
 .delivery-new-text {
     font-family: "Raleway", sans-serif;
@@ -1291,7 +1311,7 @@ body {
 }
 
 .footer-wrapper {
-    width: 1440px;
+    width: 1160px;
     margin: 0 auto;
 
 }
@@ -1326,6 +1346,7 @@ body {
 .footer-list {
     display: flex;
     flex-wrap: wrap;
+    gap: 35px;
     width: 454px;
     font-family: "Raleway", sans-serif;
     font-size: 18px;
@@ -1338,7 +1359,7 @@ body {
 }
 
 .footer-list-item:not(:first-child) {
-    margin-left: 35px;
+
 }
 
 
@@ -1432,8 +1453,8 @@ body {
 .page-main-title-block {
     margin-right: 0;
     margin: 0 auto;
-    max-width: 1079px;
-    max-height: 86px;
+
+    min-height: 86px;
     padding-left: 40px;
     padding-right: 45px;
     padding-bottom: 30px;
@@ -1476,7 +1497,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     margin: 0;
-    max-width: 429px;
+
     padding: 0;
     padding-left: 5px;
 }
@@ -2749,13 +2770,15 @@ body {
     width: 71px;
 }
 
-.service-button:active {
+.service-button:active,
+.service-button-current {
     color: #FFE17F;
     background-color: #000000;
 
 }
 
-.service-button:active::after {
+.service-button:active::after,
+.service-button-current::after {
     position: absolute;
     content: "";
     top: 0;
@@ -2973,7 +2996,7 @@ body {
 .popover {
     position: absolute;
     left: -40px;
-    width: 1160px;
+    width: 1120px;
     height: 150px;
     background-color: #FFE17F;
     z-index: 1;
