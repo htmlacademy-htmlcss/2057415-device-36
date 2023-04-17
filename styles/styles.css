@@ -833,6 +833,7 @@ body {
 
 .credit-button {
     background-color: transparent;
+    padding-right: 15px;
 }
 
 .delivery-text-main {
@@ -1146,7 +1147,7 @@ body {
 
 .delivery-main {
     position: relative;
-    margin-bottom: 111px;
+    margin-bottom: 143px;
     background: #FFFFFF;
 }
 
@@ -1179,7 +1180,7 @@ body {
     flex-direction: column;
     gap: 35px;
     width: 280px;
-    height: 319px;
+    height: 287px;
     border-right: 7px solid #000000;
     padding-top: 33px;
 }
