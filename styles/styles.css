@@ -37,6 +37,7 @@ body {
     background: #FFFFFF;
     /*min-height: 3131px;*/
     min-width: 1160px;
+    background-color: #FFFFFF;
 }
 
 .main-container {
@@ -54,6 +55,7 @@ body {
 .page-header {
     color: #000000;
     padding-top: 20px;
+    background-color: #FFFFFF;
 }
 
 .content-wrapper {
@@ -583,10 +585,11 @@ body {
 }
 
 .main-page-slider {
-    margin-bottom: 76px;
+    margin-bottom: 74px;
 }
 
 .electronics-gallery {
+    background-color: #FFFFFF;
 
 }
 
@@ -792,6 +795,7 @@ body {
 
 .categories {
     margin-bottom: 69px;
+    background-color: #FFFFFF;
 }
 
 
@@ -1148,7 +1152,7 @@ body {
 .delivery-main {
     position: relative;
     margin-bottom: 143px;
-    background: #FFFFFF;
+
 }
 
 .delivery-main::before {
@@ -1173,6 +1177,7 @@ body {
     margin: 0 auto;
     box-sizing: border-box;
     /*padding: 0 20px;*/
+
 }
 
 .delivery-main-button-wrapper {
@@ -1310,12 +1315,15 @@ body {
 
 /*Секция о нас и контакты*/
 
+
+
+
 .main-info-wrapper {
     display: flex;
     justify-content: space-between;
     width: 1160px;
     margin: 0 auto;
-    margin-bottom: 134px;
+    margin-bottom: 136px;
 
 }
 
@@ -1409,12 +1417,12 @@ body {
 .page-mailing-wrapper {
     display: grid;
     grid-template-rows: max-content 57px;
-    row-gap: 144px;
+    row-gap: 143px;
     width: 1160px;
     min-height: 296px;
     margin: 0 auto;
     padding-bottom: 55px;
-    background-color: #FFFFFF;
+    background-color: #F0F0F0;
 }
 
 
@@ -1648,7 +1656,7 @@ body {
     text-decoration-line: underline;
     color: #FFFFFF;
     padding-left: 55px;
-    padding-top: 6px;
+    padding-top: 5px;
 }
 
 
@@ -1695,6 +1703,8 @@ body {
 }
 
         /*Каталог. Хлебные крошки*/
+
+
 
 .title-monopods-wrapper {
     margin: 0 auto;
@@ -1867,6 +1877,7 @@ body {
     width: 141px;
     height: 71px;
     padding: 8px 11px 5px 0;
+
 }
 
 .pagination-btn-forward {
@@ -1880,14 +1891,21 @@ body {
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: #000000;
-    padding: 5px 1px 1px 3px;
-
+    padding: 2px 1px 1px 8px;
+    background-color: #F0F0F0;
 }
 
 .pagination-btn {
-    color: #444444;
-    opacity: 0.3;
+
+
+    background-color: #F0F0F0;
 }
+
+.pagination-btn-title {
+    opacity: 0.3;
+    color: #444444;
+}
+
 
 .pagination-link {
     width: 100%;
@@ -1919,11 +1937,16 @@ body {
 
                /* Catalog Main   */
 
+
 .catalog-centring-wrapper {
     display: flex;
     flex-direction: row;
     margin: 0 auto;
     width: 1160px;
+}
+
+.catalog-wrapper {
+    background-color: #F0F0F0;
 }
 
 .catalog-filter-block {
@@ -1992,7 +2015,7 @@ body {
     display: grid;
     grid-template-rows: min-content 1fr min-content min-content;
     width: 840px;
-
+    background-color: #FFFFFF;
 }
 
 
@@ -2120,7 +2143,7 @@ body {
     align-items: center;
     width: 840px;
     height: 70px;
-
+    background-color: #F0F0F0;
 }
 
 .sort-direction {
@@ -2170,6 +2193,7 @@ body {
     width: 760px;
     height: 55px;
     margin: 0 auto;
+    margin-bottom: 8px;
 
 }
 
@@ -2179,8 +2203,9 @@ body {
     width: 760px;
     height: 71px;
     margin: 0 auto;
-    padding-top: 46px;
+    padding-top: 39px;
     padding-bottom: 78px;
+    background-color: #FFFFFF;
 }
 
 .pagination-list {
@@ -2192,6 +2217,7 @@ body {
     font-size: 16px;
     padding-left: 0;
     margin: 0;
+    background-color: #F0F0F0;
 }
 
 .pagination-item {
@@ -2222,7 +2248,6 @@ body {
     margin: 0 auto;
 }
 
-.catalog-load-more-blok
 
 
             /* Карточки продукта */
@@ -4213,7 +4238,7 @@ color: #000000;
 }
 
 /* Для отображения состояния ошибки (:invalid) необходимо использовать следующие классы:*/
-
+/*
 .form-counter-error {
     outline: none;
     box-shadow: inset 0 0 0 2px #FF3D3D;
@@ -4231,7 +4256,7 @@ color: #000000;
     outline: 2px solid #FF3D3D;
 }
 
-
+*/
 
 
 
