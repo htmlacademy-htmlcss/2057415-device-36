@@ -794,7 +794,7 @@ body {
 
 
 .categories {
-    margin-bottom: 69px;
+    margin-bottom: 71px;
     background-color: #FFFFFF;
 }
 
@@ -1151,7 +1151,8 @@ body {
 
 .delivery-main {
     position: relative;
-    margin-bottom: 143px;
+    margin-bottom: 72px;
+    padding-bottom: 71px;
 
 }
 
@@ -1323,7 +1324,7 @@ body {
     justify-content: space-between;
     width: 1160px;
     margin: 0 auto;
-    margin-bottom: 136px;
+    margin-bottom: 69px;
 
 }
 
@@ -1412,6 +1413,7 @@ body {
 
 .page-mailing-list {
     background: #F0F0F0;
+
 }
 
 .page-mailing-wrapper {
@@ -1423,6 +1425,7 @@ body {
     margin: 0 auto;
     padding-bottom: 55px;
     background-color: #F0F0F0;
+    padding-top: 65px;
 }
 
 
