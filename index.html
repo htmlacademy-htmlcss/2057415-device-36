@@ -99,7 +99,7 @@
                 <li class="navigation-item navigation-item-user-catalog">
                   <a class="navigation-link-add-catalog navigation-link-add-plus" href="catalog.html">
                     Каталог товаров
-                    <svg class="symbol-plus" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="none" viewBox="0 0 50 50"><circle class="symbol-plus-black" cx="25" cy="25" r="24" stroke="#000" stroke-width="2" opacity=".3"/><g class="symbol-plus-black" clip-path="url(#a)" opacity=".3"><path fill="#000" d="M33 24h-7v-7h-2v7h-7v2h7v7h2v-7h7v-2Z"/></g><defs><clipPath id="a1301"><path fill="#fff" d="M17 17h16v16H17z"/></clipPath></defs></svg>
+                    <svg class="symbol-plus" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="none" viewBox="0 0 50 50"><circle class="symbol-plus-black" cx="25" cy="25" r="24" stroke="#000" stroke-width="2" opacity=".3"/><g class="symbol-plus-black" clip-path="url(#a1301)" opacity=".3"><path fill="#000" d="M33 24h-7v-7h-2v7h-7v2h7v7h2v-7h7v-2Z"/></g><defs><clipPath id="a1301"><path fill="#fff" d="M17 17h16v16H17z"/></clipPath></defs></svg>
                   </a>
                   <div class="popover popover-add-catalog navigation-plus">
                       <h2 class="visually-hidden">Категории каталога.</h2>
@@ -176,7 +176,7 @@
             <h2 class="visually-hidden">Популярные товары.</h2>
               <div class="content-wrapper-slide">
                 <ol class="slider-pagination">
-                  <li class="slider-pagination-item slider-pagination-helicopter">
+                  <li class="slider-pagination-item slider-pagination-helicopter slider-button-current">
                     <h3 class="visually-hidden">Квадрокоптер с мощным лазером.</h3>
                       <div class="slider-image-copter">
                         <img class="slider-image" src="images/slider-1.png" width="550" height="550" alt="Квадрокоптер с мощным лазером.">
@@ -218,10 +218,14 @@
                       </div>
                   </li>
 
-                  <!--<li class="slider-pagination-item slider-pagination-helicopter">
+                  <li class="slider-pagination-item slider-pagination-helicopter slider-control-two">
                     <h3 class="visually-hidden">Спортивный браслет.</h3>
                       <div class="slider-image-copter">
                         <img class="slider-image" src="images/slider-2.png" width="550" height="550" alt="Спортивный браслет.">
+                        <button class="slider-prev" type="button" aria-label="Предыдущее фото.">
+                        </button>
+                        <button class="slider-next" type="button" aria-label="Следующее фото.">
+                        </button>
                       </div>
                       <div class="slide-text-information">
                         <p class="selling-text">
@@ -253,10 +257,14 @@
                       </div>
                   </li>
 
-                  <li class="slider-pagination-item slider-pagination-helicopter">
+                  <li class="slider-pagination-item slider-pagination-helicopter slider-control-two">
                     <h3 class="visually-hidden">Селфи-палка.</h3>
                       <div class="slider-image-copter">
                         <img class="slider-image" src="images/slider-3.png" width="550" height="550" alt="Селфи-палка.">
+                        <button class="slider-prev" type="button" aria-label="Предыдущее фото.">
+                        </button>
+                        <button class="slider-next" type="button" aria-label="Следующее фото.">
+                        </button>
                       </div>
                       <div class="slide-text-information">
                         <p class="selling-text">
@@ -294,7 +302,7 @@
                             </div>
                           </dl>
                       </div>
-                  </li>-->
+                  </li>
 
                 </ol>
 
@@ -384,7 +392,7 @@
             </div>
 
           <ul class="delivery-list">
-            <li class="delivery-button-list delivery-button-list-postman">
+            <li class="delivery-button-list delivery-button-list-postman delivery-button-current">
               <h3 class="delivery-text-main">Доставка</h3>
                 <p class="delivery-text">Мы с удовольствием доставим ваш товар прямо<br> к вашему
                   подъезду совершенно бесплатно! Ведь<br> мы неплохо
@@ -392,16 +400,20 @@
                 </p>
                 <!--<img class="postman" src="images/postman.svg" width="150" height="100" alt="Почтальон.">-->
               </li>
-            <!--<li class="security-button-list">
-              <h3 class="security-text-main">Гарантия</h3>
-                <p class="security-text">Тест раздела Гарантия
+            <li class="security-button-list delivery-list delivery-button-list-message delivery-button-hidden">
+              <h3 class="security-text-main delivery-text-main">Гарантия</h3>
+                <p class="security-text">Если из-за возгорания купленного у нас товара у вас<br>
+                  сгорит дом - не переживайте, мы выдадим вам новый.<br>
+                  Товар, не дом, конечно же.
                 </p>
             </li>
-            <li class="credit-button-list">
-              <h3 class="credit-text-main">Кредит</h3>
-                <p class="credit-text">Тест раздела Кредит
+            <li class="credit-button-list delivery-list delivery-button-list-loader delivery-button-hidden">
+              <h3 class="credit-text-main delivery-text-main">Кредит</h3>
+                <p class="credit-text">Залезть в долговую яму стало проще! Кредитные<br>
+                  консультанты подберут для вас наиболее выгодные<br> условия кредита. Выгодные
+                  для банка, разумеется.
                 </p>
-            </li>-->
+            </li>
           </ul>
 
           <!--<div class="image-postman-block">
@@ -440,7 +452,7 @@
                       </clipPath>
                       </defs>
                       </svg>-->
-                    <div class="icon-information"></div>
+                    <!--<div class="icon-information"></div>-->
                   </div>
                 </div>
               </a>
@@ -552,12 +564,13 @@
         </div>
         <div class="footer-footer-block">
           <div class="footer-line-block">
+            <span class="visually-hidden">Декоративная полоска</span>
           <!--<img class="footer-line" src="images/footer-line.svg" width="80" height="7" alt="Декоративная черточка.">-->
           </div>
             <ul class="footer-social-media-list">
               <li class="footer-social-media-link">
                 <a class="social-media-link-telegram social-media-link" href="https://t.me/htmlacademy">
-                  <img class="telegram-image-logo" src="images/telegram.svg" width="40" height="40" alt="Мы в телеграме.">
+                  <!--<img class="telegram-image-logo" src="images/telegram.svg" width="40" height="40" alt="Мы в телеграме.">-->
                 </a>
               </li>
               <li class="footer-social-media-link">
@@ -568,7 +581,7 @@
               </li>
               <li class="footer-social-media-link">
                 <a class="social-media-link-twitter social-media-link" href="https://twitter.com/htmlacademy_ru">
-                  <img class="twitter-image-logo" src="images/twitter.svg" width="40" height="40" alt="Мы в твиттере.">
+                  <!--<img class="twitter-image-logo" src="images/twitter.svg" width="40" height="40" alt="Мы в твиттере.">-->
                 </a>
               </li>
             </ul>
