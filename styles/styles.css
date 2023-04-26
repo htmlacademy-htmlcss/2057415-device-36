@@ -67,7 +67,7 @@ body {
 }
 
 .page-logo {
-    padding-left: 46px;
+    padding-left: 59px;
     padding-right: 46px;
     background-image: linear-gradient(180deg,#fff 20px,#FFE17F 20px);
 }
@@ -96,7 +96,7 @@ body {
     line-height: 20px;
     color: #000000;
 
-    padding: 30px 30px 15px 46px;
+    padding: 30px 30px 15px 60px;
     align-items: center;
 
 
@@ -108,6 +108,7 @@ body {
     position: relative;
     border: 2px solid #000;
     border-radius: 50px;
+    border: 2px solid #000;
 }
 
 .catalog-header-search-form {
@@ -138,12 +139,18 @@ body {
     font-size: 16px;
     line-height: 20px;
     color: #000000;
-    border-radius: 0
+    border-radius: 0;
     border: none;
+    border-right: 2px solid #000;
 }
 
 .header-search-site::placeholder {
     opacity: 0.3;
+}
+
+.header-search-button:hover,
+.header-search-button:active {
+    border-radius: 0 50px 50px 0;
 }
 
 .catalog-header-search-site {
@@ -221,6 +228,7 @@ body {
     height: 40px;
     border-left: 1px solid #000000;
     border: 0;
+    border-radius: 0;
 }
 
 .catalog-header-search-button {
@@ -324,7 +332,7 @@ body {
     gap: 45px;
     margin: 0;
     padding-left: 0;
-    padding-right: 50px;
+    padding-right: 35px;
     max-height: 25px;
     padding-top: 13px;
 }
@@ -395,7 +403,7 @@ body {
     display: flex;
     width: 1040px;
     margin: 0;
-    padding-left: 22px;
+    padding-left: 36px;
     max-height: 50px;
 }
 
@@ -1801,10 +1809,12 @@ body {
     box-shadow: inset 0 0 0 2px #AF4FFF;
     /*outline: 2px solid #AF4FFF;*/
     outline: none;
-
 }
 
-
+/* Ошибка при вводе e-mail подписка на рассылку*/
+.field-error {
+    border-color: #FF3D3D;
+}
 
 
 /* Футер */
@@ -3783,10 +3793,6 @@ body {
     padding-left: 0;
     row-gap: 16px;
 }
-/*
-.radio-control:hover {
-    opacity: 0.6;
-} */
 
 .control:focus {
     outline: 2px solid #AF4FFF;
@@ -3810,7 +3816,18 @@ body {
 }
 
 .button-btn:focus {
-     outline: 2px solid #AF4FFF;
+     outline: none;
+}
+
+
+.button-btn:focus::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    top: -5px;
+    left: -5px;
+    border: 2px solid #AF4FFF;
 }
 
 .button-btn:active {
@@ -3835,6 +3852,7 @@ body {
     display: inline-flex;
     align-items: center;
     user-select: none;
+    position: relative;
 }
 
 .radio-control::before {
@@ -3858,6 +3876,17 @@ body {
     background-image: url(../images/ellipseforradio.svg);
 }
 
+.radio-control-input:focus + label::after {
+    position: absolute;
+    content: "";
+    top: -4px;
+    left: -4px;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #AF4FFF;
+}
+
+
 /*
 .radio-control::after {
     content: '';
@@ -3870,10 +3899,6 @@ body {
     position: absolute;
 }
 
-.radio-control {
-    position: relative;
-} */
-
 /*
 .radio-control-input:not(:disabled)+label:hover::before {
     opacity: 0.6;
@@ -3883,13 +3908,14 @@ body {
     opacity: 0;
 }  */
 
+/*
 .radio-control-input:focus+label::before {
     outline: 2px solid #AF4FFF;
 }
 
 .radio-control-input:focus:not(:checked)+label::before {
     outline: 2px solid #AF4FFF;
-}
+}  */
 
 .radio-control-input:disabled+label::before {
     opacity: 0.1;
@@ -3903,7 +3929,9 @@ body {
     opacity: 0.3;
 }
 
-
+.radio-control-input:disabled +label {
+    opacity: 0.1;
+}
 
 
 
@@ -3921,6 +3949,7 @@ body {
     display: inline-flex;
     align-items: center;
     user-select: none;
+    position: relative;
 }
 
 .check-control::before {
@@ -3965,15 +3994,19 @@ body {
     opacity: 0.3;
 }
 
+.check-control-input:disabled + label {
+    opacity: 0.1;
+}
 
-
+/*
 .check-control-input:focus+label::before {
     outline: 2px solid #AF4FFF;
-}
+} */
 
+/*
 .check-control-input:focus:not(:checked)+label::before {
     outline: 2px solid #AF4FFF;
-}
+} */
 
 .check-control-input:disabled+label::before {
     opacity: 0.1;
@@ -4634,10 +4667,7 @@ color: #000000;
     cursor: pointer;
 }
 
-.form-counter-image:hover .modal-info-wrapper {
 
-
-}
 
 .modal-info-wrapper {
     position: absolute;
@@ -4793,6 +4823,9 @@ color: #000000;
 
 }
 
+.auth-form-input-name::disabled {
+    opacity: 0.3;
+}
 
 
 .auth-form-input-email:hover {
@@ -4807,6 +4840,9 @@ color: #000000;
 
 }
 
+.auth-form-input-email:disabled {
+    opacity: 0.3;
+}
 
 
 .auth-form-input-email:disabled {
@@ -4826,6 +4862,9 @@ color: #000000;
 
 }
 
+.form-textarea-input:disabled {
+    opacity: 0.3;
+}
 
 .form-counter-input:hover {
     background: #DCDCDC;
@@ -4836,7 +4875,9 @@ color: #000000;
     box-shadow: inset 0 0 0 2px #AF4FFF;
 }
 
-
+.form-counter-input:disabled {
+    opacity: 0.3;
+}
 
 
 
@@ -4854,6 +4895,10 @@ color: #000000;
     opacity: 0.3;
 }
 
+.form-counter-minus-button:disabled {
+    opacity: 0.3;
+}
+
 .form-counter-plus-button:hover {
     opacity: 0.6;
 }
@@ -4866,26 +4911,16 @@ color: #000000;
     opacity: 0.3;
 }
 
-/* Для отображения состояния ошибки (:invalid) необходимо использовать следующие классы:*/
-/*
-.form-counter-error {
+.form-counter-plus-button:disabled {
+    opacity: 0.3;
+}
+
+/* Для отображения состояния ошибки (:invalid) необходимо использовать класс: .input-error*/
+
+.input-error {
     outline: none;
     box-shadow: inset 0 0 0 2px #FF3D3D;
 }
-
-.form-textarea-input-error {
-    outline: 2px solid #FF3D3D;
-}
-
-.auth-form-input-email-error {
-    outline: 2px solid #FF3D3D;
-}
-
-.auth-form-input-name-error {
-    outline: 2px solid #FF3D3D;
-}
-
-*/
 
 
 
@@ -4936,6 +4971,18 @@ color: #000000;
     justify-self: end;
     position: relative;
 }
+
+/* Класс для ошибки (:invalid) */
+.modal-sum-error::before {
+    position: absolute;
+    content: "";
+    width: 180px;
+    height: 60px;
+    bottom: -2px;
+    left: -2px;
+    border: 2px solid red;
+}
+
 
 /*
 .modal-sum-wrapper::after {

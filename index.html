@@ -529,7 +529,7 @@
           </div>
           <div class="newsletter-form-block">
             <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-
+                <!--При ошибке добавить класс .field-error -->
                 <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" aria-label="Ваш e-mail."
                 id="newsletter-email" required>
             <button class="button newsletter-button" type="submit">
@@ -610,6 +610,7 @@
         <section class="modal-content">
           <h2 class="modal-title">Доставка под заказ</h2>
           <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+            <!--Для отображения состояния ошибки (:invalid) необходимо использовать класс: .input-error-->
           <div class="modal-name-wrapper">
 
               <label class="auth-form-name" for="name">Ваше имя:</label>
@@ -638,6 +639,7 @@
               </label>
                 <input class="form-textarea-input form-textarea-input-error" type="text" id="textarea" name="textarea" aria-label="Что необходимо привезти." placeholder="В свободной форме" required>
           </div>
+          <!--Для отображения состояния ошибки (:invalid) необходимо использовать класс: .modal-sum-error-->
           <div class="modal-sum-wrapper">
               <label class="form-counter-title" for="number">
                 Количество:
