@@ -27,42 +27,50 @@
               <div class="header-navigation-user">
                 <ul class="navigation-user navigation-user-xlist">
                   <li class="navigation-item navigation-item-enter">
-                    <a class="navigation-link" href="">
-                      <img class="navigation-link-pic" src="images/icons-come.svg" width="14" height="14" alt="Иконка пункта меню войти.">
+                    <a class="navigation-link navigation-link-enter" href="">
+                      <!--<img class="navigation-link-pic" src="images/icons-come.svg" width="14" height="14" alt="Иконка пункта меню войти.">-->
                         Войти
                     </a>
                   </li>
                 </ul>
                 <ul class="navigation-user user-menu-list">
                   <li class="navigation-item navigation-item-compare">
-                    <a class="navigation-link" href="">
-                      <img class="navigation-link-pic-compare" src="images/icons-compare.svg" width="14" height="14" alt="Иконка пункта меню сравнить.">
-                        Сравнить
+                    <a class="navigation-link navigation-link-compare" href="">
+                      <!--<img class="navigation-link-pic-compare" src="images/icons-compare.svg" width="14" height="14" alt="Иконка пункта меню сравнить.">-->
+                        <span class="navigation-link-compare-title">Сравнить</span>
                     </a>
                   </li>
                   <li class="navigation-item navigation-item-basket">
-                    <a class="navigation-link" href="">
-                      <img class="navigation-link-pic-basket" src="images/icons-basket.svg" width="14" height="14" alt="Иконка пункта меню корзина.">
-                        Корзина
+                    <a class="navigation-link navigation-link-basket" href="">
+                      <!--<img class="navigation-link-pic-basket" src="images/icons-basket.svg" width="14" height="14" alt="Иконка пункта меню корзина.">-->
+                        <span class="navigation-link-basket-title">Корзина</span>
                     </a>
                     <div class="popover-basket popover-window">
-                      <h3 class="visually-hidden">tooltip recycle bin</h3>
-                      <button class="visually-hidden popover-button popover_button">
+                      <h3 class="visually-hidden">Всплывающее окно корзины</h3>
+                      <!--<button class="visually-hidden popover_button">
                         <span class="visually-hidden">Закрыть корзину.</span>
-                      </button>
+                      </button>-->
                       <ul class="basket__list">
                         <li class="basket__item">
-                          <img class="basket__image" src="images/product-1-small.png" width="39" height="43" alt="Любительская селфи-палка.">
-                          <p class="cart__item__title">Любительская<br> селфи-палка</p>
+                          <a class="basket__item-link" href="#">
+                            <div class="basket__item-link-block">
+                              <img class="basket__image" src="images/product-1-small.png" width="39" height="43" alt="Любительская селфи-палка.">
+                              <p class="cart__item__title">Любительская<br> селфи-палка</p>
+                            </div>
+                          </a>
                           <button class="close_item_product">
                             <svg class="close_item_product-image" xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="none"><g clip-path="url(#a)"><path fill="#fff" d="m11 1-1-1-4.5 4.5L1 0 0 1l4.5 4.5L0 10l1 1 4.5-4.5L10 11l1-1-4.5-4.5L11 1Z"/></g><defs><clipPath id="a1300"><path fill="#fff" d="M0 0h11v11H0z"/></clipPath></defs></svg>
                             <span class="visually-hidden">Закрыть.</span>
                           </button>
                         </li>
                         <li class="basket__item">
-                          <img class="basket__image" src="images/product-2-small.png" width="39" height="43" alt="Профессиональная селфи-палка.">
-                          <p class="cart__item__title">Профессиональная<br> селфи-палка</p>
-                          <button class="close_item__product">
+                          <a class="basket__item-link" href="#">
+                            <div class="basket__item-link-block">
+                              <img class="basket__image" src="images/product-2-small.png" width="39" height="43" alt="Профессиональная селфи-палка.">
+                              <p class="cart__item__title">Профессиональная<br> селфи-палка</p>
+                            </div>
+                          </a>
+                          <button class="close_item_product">
                             <svg class="close_item_product-image" xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="none"><g clip-path="url(#a)"><path fill="#fff" d="m11 1-1-1-4.5 4.5L1 0 0 1l4.5 4.5L0 10l1 1 4.5-4.5L10 11l1-1-4.5-4.5L11 1Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h11v11H0z"/></clipPath></defs></svg>
                             <span class="cross-cross visually-hidden">Закрыть.</span>
                           </button>
@@ -99,9 +107,9 @@
                 <li class="navigation-item navigation-item-user-catalog">
                   <a class="navigation-link-add-catalog navigation-link-add-plus" href="catalog.html">
                     Каталог товаров
-                    <svg class="symbol-plus" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="none" viewBox="0 0 50 50"><circle class="symbol-plus-black" cx="25" cy="25" r="24" stroke="#000" stroke-width="2" opacity=".3"/><g class="symbol-plus-black" clip-path="url(#a)" opacity=".3"><path fill="#000" d="M33 24h-7v-7h-2v7h-7v2h7v7h2v-7h7v-2Z"/></g><defs><clipPath id="a1301"><path fill="#fff" d="M17 17h16v16H17z"/></clipPath></defs></svg>
+                    <svg class="symbol-plus" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="none" viewBox="0 0 50 50"><circle class="symbol-plus-black" cx="25" cy="25" r="24" stroke="#000" stroke-width="2" opacity=".3"/><g class="symbol-plus-black" clip-path="url(#a1301)" opacity=".3"><path fill="#000" d="M33 24h-7v-7h-2v7h-7v2h7v7h2v-7h7v-2Z"/></g><defs><clipPath id="a1301"><path fill="#fff" d="M17 17h16v16H17z"/></clipPath></defs></svg>
                   </a>
-                  <div class="popover popover-add-catalog">
+                  <div class="popover popover-add-catalog navigation-plus">
                       <h2 class="visually-hidden">Категории каталога.</h2>
                     <ul class="main-dropdown main-menu-dropdown">
                       <li class="dropdown-menu-item">
@@ -176,7 +184,7 @@
             <h2 class="visually-hidden">Популярные товары.</h2>
               <div class="content-wrapper-slide">
                 <ol class="slider-pagination">
-                  <li class="slider-pagination-item slider-pagination-helicopter">
+                  <li class="slider-pagination-item slider-pagination-helicopter slider-button-current">
                     <h3 class="visually-hidden">Квадрокоптер с мощным лазером.</h3>
                       <div class="slider-image-copter">
                         <img class="slider-image" src="images/slider-1.png" width="550" height="550" alt="Квадрокоптер с мощным лазером.">
@@ -218,10 +226,14 @@
                       </div>
                   </li>
 
-                  <!--<li class="slider-pagination-item slider-pagination-helicopter">
+                  <li class="slider-pagination-item slider-pagination-helicopter slider-control-two">
                     <h3 class="visually-hidden">Спортивный браслет.</h3>
                       <div class="slider-image-copter">
                         <img class="slider-image" src="images/slider-2.png" width="550" height="550" alt="Спортивный браслет.">
+                        <button class="slider-prev" type="button" aria-label="Предыдущее фото.">
+                        </button>
+                        <button class="slider-next" type="button" aria-label="Следующее фото.">
+                        </button>
                       </div>
                       <div class="slide-text-information">
                         <p class="selling-text">
@@ -232,31 +244,35 @@
                         </p>
                           <a class="navigation-link-slide" href="#">Подробнее</a>
 
-                          <dl class="data-information data-text-information">
+                          <div class="data-information data-text-information">
                             <div class="important-information-block">
-                              <dd class="important-information">
+                              <span class="important-information">
                                 48&nbsp;часов
-                              </dd>
-                              <dt class="important-information-add">
+                              </span>
+                              <span class="important-information-add">
                                 Без подзарядки
-                              </dt>
+                              </span>
                             </div>
                             <div class="important-information-block">
-                              <dd class="important-information">
+                              <span class="important-information">
                                 50&nbsp;М
-                              </dd>
-                              <dt class="important-information-add">
+                              </span>
+                              <span class="important-information-add">
                                 Радиус поражения
-                              </dt>
+                              </span>
                             </div>
-                          </dl>
+                          </div>
                       </div>
                   </li>
 
-                  <li class="slider-pagination-item slider-pagination-helicopter">
+                  <li class="slider-pagination-item slider-pagination-helicopter slider-control-two">
                     <h3 class="visually-hidden">Селфи-палка.</h3>
                       <div class="slider-image-copter">
                         <img class="slider-image" src="images/slider-3.png" width="550" height="550" alt="Селфи-палка.">
+                        <button class="slider-prev" type="button" aria-label="Предыдущее фото.">
+                        </button>
+                        <button class="slider-next" type="button" aria-label="Следующее фото.">
+                        </button>
                       </div>
                       <div class="slide-text-information">
                         <p class="selling-text">
@@ -267,43 +283,43 @@
                         </p>
                           <a class="navigation-link-slide" href="#">Подробнее</a>
 
-                          <dl class="data-information data-text-information">
+                          <div class="data-information data-text-information">
                             <div class="important-information-block">
-                              <dd class="important-information">
+                              <span class="important-information">
                                 8,5&nbsp;м
-                              </dd>
-                              <dt class="important-information-add">
+                              </span>
+                              <span class="important-information-add">
                                 Длина палки
-                              </dt>
+                              </span>
                             </div>
                             <div class="important-information-block">
-                              <dd class="important-information">
+                              <span class="important-information">
                                 5&nbsp;кг
-                              </dd>
-                              <dt class="important-information-add">
+                              </span>
+                              <span class="important-information-add">
                                 Вес палки
-                              </dt>
+                              </span>
                             </div>
                             <div class="important-information-block">
-                              <dd class="important-information">
+                              <span class="important-information">
                                 Карбон
-                              </dd>
-                              <dt class="important-information-add">
+                              </span>
+                              <span class="important-information-add">
                                 Материал
-                              </dt>
+                              </span>
                             </div>
-                          </dl>
+                          </div>
                       </div>
-                  </li>-->
+                  </li>
 
                 </ol>
 
-              <div class="point-conrol point_conrol">
-                <button class="point-conrol-button point-conrol--button" type="button" aria-label="1.">
+              <div class="point-control point_control">
+                <button class="point-control-button point-control--button" type="button" aria-label="1.">
                 </button>
-                <button class="point-conrol-button" type="button" aria-label="2.">
+                <button class="point-control-button" type="button" aria-label="2.">
                 </button>
-                <button class="point-conrol-button" type="button" aria-label="3.">
+                <button class="point-control-button" type="button" aria-label="3.">
                 </button>
               </div>
             </div>
@@ -384,7 +400,7 @@
             </div>
 
           <ul class="delivery-list">
-            <li class="delivery-button-list delivery-button-list-postman">
+            <li class="delivery-button-list delivery-button-list-postman delivery-button-current">
               <h3 class="delivery-text-main">Доставка</h3>
                 <p class="delivery-text">Мы с удовольствием доставим ваш товар прямо<br> к вашему
                   подъезду совершенно бесплатно! Ведь<br> мы неплохо
@@ -392,16 +408,20 @@
                 </p>
                 <!--<img class="postman" src="images/postman.svg" width="150" height="100" alt="Почтальон.">-->
               </li>
-            <!--<li class="security-button-list">
-              <h3 class="security-text-main">Гарантия</h3>
-                <p class="security-text">Тест раздела Гарантия
+            <li class="security-button-list delivery-list delivery-button-list-message delivery-button-hidden">
+              <h3 class="security-text-main delivery-text-main">Гарантия</h3>
+                <p class="security-text">Если из-за возгорания купленного у нас товара у вас<br>
+                  сгорит дом - не переживайте, мы выдадим вам новый.<br>
+                  Товар, не дом, конечно же.
                 </p>
             </li>
-            <li class="credit-button-list">
-              <h3 class="credit-text-main">Кредит</h3>
-                <p class="credit-text">Тест раздела Кредит
+            <li class="credit-button-list delivery-list delivery-button-list-loader delivery-button-hidden">
+              <h3 class="credit-text-main delivery-text-main">Кредит</h3>
+                <p class="credit-text">Залезть в долговую яму стало проще! Кредитные<br>
+                  консультанты подберут для вас наиболее выгодные<br> условия кредита. Выгодные
+                  для банка, разумеется.
                 </p>
-            </li>-->
+            </li>
           </ul>
 
           <!--<div class="image-postman-block">
@@ -418,7 +438,7 @@
               <a class="link-wrapper" href="#">
                 <div class="delivery-new-wrapper-link">
                   <div class="postman-car-block">
-                    <img class="postman-car" src="images/postman-car.svg" width="47" height="31" alt="Почтовая машина.">
+                    <!--<img class="postman-car" src="images/postman-car.svg" width="47" height="31" alt="Почтовая машина.">-->
                   </div>
                   <div class="delivery-new-text-block">
                 <!--<a class="delivery-new-text-link" href="#">-->
@@ -428,7 +448,7 @@
                 <!--</a>-->
                   </div>
                   <div class="icon-information-block">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="41" height="40" viewBox="0 0 41 40" fill="none">
+                    <!--<svg xmlns="http://www.w3.org/2000/svg" width="41" height="40" viewBox="0 0 41 40" fill="none">
                       <circle cx="20.5" cy="20" r="20" fill="#DCDCDC" fill-opacity="0.5"/>
                       <g class="my-icon" opacity="0.3" clip-path="url(#clip0_11365_562)">
                       <path d="M21 14H19V16H21V14Z" fill="black"/>
@@ -439,8 +459,8 @@
                       <rect width="2" height="12" fill="white" transform="translate(19 14)"/>
                       </clipPath>
                       </defs>
-                      </svg>
-                    <div class="icon-information"></div>
+                      </svg>-->
+                    <!--<div class="icon-information"></div>-->
                   </div>
                 </div>
               </a>
@@ -476,7 +496,7 @@
                   <p class="e-commerce-device">
                     Интернет-магазин &laquo;Девайс&raquo;
                   </p>
-                  <p class="device-adress">
+                  <p class="device-address">
                     Санкт-Петербург, набережная реки Карповки, 5, литера П.<br>
                     <a class="contact-phone-link" href="tel:+78128121212">
                       +7 (812) 812-12-12
@@ -509,7 +529,7 @@
           </div>
           <div class="newsletter-form-block">
             <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-
+                <!--При ошибке добавить класс .field-error -->
                 <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" aria-label="Ваш e-mail."
                 id="newsletter-email" required>
             <button class="button newsletter-button" type="submit">
@@ -531,7 +551,7 @@
             width="145" height="36" alt="Логотип интернет-магазина Девайс."></a>
         </div>
         <div class="footer-middle-block">
-          <address class="footer-contacts-adress">
+          <address class="footer-contacts-address">
             Санкт-Петербург, набережная<br>
             реки Карповки, 5, литера П.
           </address>
@@ -551,21 +571,25 @@
               </a>
         </div>
         <div class="footer-footer-block">
-          <img class="footer-line" src="images/footer-line.svg" width="80" height="7" alt="Декоративная черточка.">
+          <!--<div class="footer-line-block">
+            <span class="visually-hidden">Декоративная полоска</span>-->
+          <!--<img class="footer-line" src="images/footer-line.svg" width="80" height="7" alt="Декоративная черточка.">-->
+          <!--</div>-->
             <ul class="footer-social-media-list">
               <li class="footer-social-media-link">
                 <a class="social-media-link-telegram social-media-link" href="https://t.me/htmlacademy">
-                  <img class="telegram-image-logo" src="images/telegram.svg" width="40" height="40" alt="Мы в телеграме.">
+                  <!--<img class="telegram-image-logo" src="images/telegram.svg" width="40" height="40" alt="Мы в телеграме.">-->
                 </a>
               </li>
               <li class="footer-social-media-link">
                 <a class="social-media-link-youtube social-media-link" href="https://www.youtube.com/user/htmlacademyru">
-                  <img class="youtube-image-logo" src="images/youtube.svg" width="40" height="40" alt="Мы в ютубе.">
+
+                  <!--<img class="youtube-image-logo" src="images/youtube.svg" width="40" height="40" alt="Мы в ютубе.">-->
                 </a>
               </li>
               <li class="footer-social-media-link">
                 <a class="social-media-link-twitter social-media-link" href="https://twitter.com/htmlacademy_ru">
-                  <img class="twitter-image-logo" src="images/twitter.svg" width="40" height="40" alt="Мы в твиттере.">
+                  <!--<img class="twitter-image-logo" src="images/twitter.svg" width="40" height="40" alt="Мы в твиттере.">-->
                 </a>
               </li>
             </ul>
@@ -586,11 +610,12 @@
         <section class="modal-content">
           <h2 class="modal-title">Доставка под заказ</h2>
           <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+            <!--Для отображения состояния ошибки (:invalid) необходимо использовать класс: .input-error-->
           <div class="modal-name-wrapper">
 
               <label class="auth-form-name" for="name">Ваше имя:</label>
                 <input class="auth-form-input-name auth-form-input-name-error" type="text" id="name" name="name" aria-label="Введите ваше имя." placeholder="Введите имя" required>
-                <svg class="auth-form-input-name-image" xmlns="http://www.w3.org/2000/svg" width="15" height="12" fill="none"><path fill="#B3B3B3" d="M1 12h13c-.2-2.6-2.1-4.8-4.7-5.5 1-.6 1.7-1.7 1.7-3C11 1.6 9.4 0 7.5 0S4 1.6 4 3.5c0 1.3.7 2.4 1.7 3C3.1 7.2 1.2 9.4 1 12Z"/></svg>
+                <!--<svg class="auth-form-input-name-image" xmlns="http://www.w3.org/2000/svg" width="15" height="12" fill="none"><path fill="#B3B3B3" d="M1 12h13c-.2-2.6-2.1-4.8-4.7-5.5 1-.6 1.7-1.7 1.7-3C11 1.6 9.4 0 7.5 0S4 1.6 4 3.5c0 1.3.7 2.4 1.7 3C3.1 7.2 1.2 9.4 1 12Z"/></svg>-->
                 <p class="form-add-name">Добавьте имя</p>
           </div>
 
@@ -599,7 +624,7 @@
                   Ваш e-mail:
               </label>
                   <input class="auth-form-input-email auth-form-input-email-error" type="email" id="e-mail" name="e-mail" aria-label="Введите ваш e-mail." placeholder="Введите e-mail" required>
-                  <svg class="auth-form-input-email-image" xmlns="http://www.w3.org/2000/svg" width="15" height="12" viewBox="0 0 24 24"><path fill="#B3B3B3" d="m23.954 5.542-8.418 8.418a5.007 5.007 0 0 1-7.072 0L.046 5.542C.032 5.7 0 5.843 0 6v12a5.006 5.006 0 0 0 5 5h14a5.006 5.006 0 0 0 5-5V6c0-.157-.032-.3-.046-.458Z"/><path fill="#B3B3B3" d="m14.122 12.546 9.134-9.135A4.986 4.986 0 0 0 19 1H5A4.986 4.986 0 0 0 .744 3.411l9.134 9.135a3.007 3.007 0 0 0 4.244 0Z"/></svg>
+                  <!--<svg class="auth-form-input-email-image" xmlns="http://www.w3.org/2000/svg" width="15" height="12" viewBox="0 0 24 24"><path fill="#B3B3B3" d="m23.954 5.542-8.418 8.418a5.007 5.007 0 0 1-7.072 0L.046 5.542C.032 5.7 0 5.843 0 6v12a5.006 5.006 0 0 0 5 5h14a5.006 5.006 0 0 0 5-5V6c0-.157-.032-.3-.046-.458Z"/><path fill="#B3B3B3" d="m14.122 12.546 9.134-9.135A4.986 4.986 0 0 0 19 1H5A4.986 4.986 0 0 0 .744 3.411l9.134 9.135a3.007 3.007 0 0 0 4.244 0Z"/></svg>-->
                   <p class="form-add-email">
                   Забавный у вас адрес
                   </p>
@@ -614,6 +639,7 @@
               </label>
                 <input class="form-textarea-input form-textarea-input-error" type="text" id="textarea" name="textarea" aria-label="Что необходимо привезти." placeholder="В свободной форме" required>
           </div>
+          <!--Для отображения состояния ошибки (:invalid) необходимо использовать класс: .modal-sum-error-->
           <div class="modal-sum-wrapper">
               <label class="form-counter-title" for="number">
                 Количество:
