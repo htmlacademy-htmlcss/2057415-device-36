@@ -3273,7 +3273,6 @@ body {
 .filter-input--catalog {
   border: 0;
   -moz-appearance: textfield;
-  appearance: none;
 }
 
 .filter-input--catalog::-webkit-outer-spin-button,
